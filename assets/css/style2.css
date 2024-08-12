@@ -1526,10 +1526,10 @@ s ul#top_tools2 li i {
 }
 
 .main_title h2 {
-    font-family: 'main';
+    font-family: 'light';
     font-size: 30px;
-    font-weight: 400;
-
+    font-weight: 300;
+    color: #23282cc7;
 
 }
 
@@ -1603,6 +1603,8 @@ s ul#top_tools2 li i {
 .nav-pills .show>.nav-link {
     color: var(--primary) !important;
     background-color: #caa04400 !important;
+    box-shadow: 0px -1px 8px 0px #FFFBF6A1;
+
 
 }
 
@@ -1819,11 +1821,11 @@ s ul#top_tools2 li i {
     background: -webkit-linear-gradient(top, transparent, #000);
     background: linear-gradient(to bottom, transparent, #000);
     width: 100%;
-    padding: 45px 10px 8px 5px;
     color: #fff;
     font-size: 13px;
     font-weight: 500;
     line-height: 1;
+    padding: 25px 25px 10px 25px;
 }
 
 .short_info i {
@@ -1973,13 +1975,13 @@ s ul#top_tools2 li i {
     /* background-color: orange; */
 
 }
-.startFrom
-{
+
+.startFrom {
     font-family: 'light';
-font-size: 12px;
-font-weight: 800;
-line-height: 18px;
-color: #DEAD69;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 18px;
+    color: #DEAD69;
 }
 
 /*^------------------------ Cards End ----------------------------------------> */
@@ -1991,7 +1993,7 @@ color: #DEAD69;
     background-position: center;
     background-repeat: no-repeat;
     height: 50vh;
-    border-radius: 30px;
+    border-radius: 15px;
     color: #fff;
     cursor: pointer;
     flex: 0.5;
@@ -2038,17 +2040,18 @@ color: #DEAD69;
 
 .activityCT {
     background-image: url('../img/wing.jpg');
-    padding-top: 120px;
+    padding-top: 50px;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 50px;
 
 }
-.activityShowCT
-{
-    margin-top: 90px;
-    
+
+.activityShowCT {
+    margin-top: 60px;
+
 }
+
 .panel.active {
     flex: 2;
 }
@@ -2083,6 +2086,15 @@ color: #DEAD69;
 .panel-container {
     display: flex;
     /* width: 90vw; */
+}
+
+.activity-title {
+    font-family: 'light';
+    font-size: 44px;
+    font-weight:500 !important;
+    text-align: center;
+    color: #FFFBF6;
+
 }
 
 /* ------------------------ Activities End ----------------------------------------> */
@@ -2483,7 +2495,7 @@ h3 span,
 h4 span,
 h5 span,
 h6 span {
-    color: #ca9f44;
+    color: #DEAD69;
 }
 
 ul.list_order {
