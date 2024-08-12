@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Natioinal Egypt</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="UramIT-EG" name="keywords" />
+    <meta content="UramIT-EG" name="description" />
+
+    <!-- Favicon -->
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+    <!-- Template Stylesheet -->
+
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <link href="assets/css/visit-style.css" rel="stylesheet" />
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        .bg-uram-colr {
+            background-color: #111f46 !important;
+        }
+
+        .statics-border-left {
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        .statics-border-right {
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .rounded {
+            border-radius: 10px !important;
+        }
+
+        @media (max-width: 767px) {
+            .navbar {
+                background-color: black;
+            }
+
+            .logo-size-small {
+                width: 160px;
+            }
+
+            .img-about-us-siz-sml {
+                display: none;
+            }
+
+            .bg-logo-des-footer {
+                width: 92%;
+            }
+
+            #about-img {
+                min-height: 0px !important;
+            }
+
+            #statics-card {
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .navbar {
+                background-color: black;
+            }
+        }
+
+        .nav-item {
+            font-size: 17px !important;
+        }
+
+        .btn-form {
+            background-color: #2496d4;
+            color: white;
+        }
+
+        .h4-text-dark {
+            color: white !important;
+        }
+
+        @media (max-width: 767px) {
+            #header-carousel {
+                height: 400px;
+            }
+
+            .carousel-item img {
+                height: 400px;
+            }
+        }
+    </style>
+    <style>
+        .first-sectionInCategory {
+            position: relative;
+            /* background-image: url(../img/seasons-entertainment-culture.jpeg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .first-sectionInCategory::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            /* Ensure the overlay is behind the content */
+        }
+
+        .main_title {
+            position: relative;
+            z-index: 1;
+            /* Ensure the text is above the overlay */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+    <!--!--------------- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav
+            class="navbar navbar-expand-lg navbar-dark px- mt-0 container-fluid mx-auto py-lg-1 d-flex align-items-center justify-content-around">
+            <div class="container-xxl">
+                <div class="d-flex flex-row align-items-center">
+                    <a href="index.html"><img src="assets/img/favIcon.png" alt="" style="margin-left: 10px;"
+                            class="logo1">
+                    </a>
+                    <h5 class="my-0 text-white text-end">ناشيونال ايجيبت</h5>
+                </div>
+                <button class="navbar-toggler" onclick="openNav(); hideSideBarButton();" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                        </path>
+                    </svg>
+                </button>
+                <div class="w-100 collapse navbar-collapse " id="navbarCollapse">
+                    <ul
+                        class="list-unstyled row w-100 align-items-center align-content-center justify-content-between smallNav">
+                        <li class="col-lg-5 px-0  mx-auto " id="searchGroup">
+                            <div
+                                class="row  col-12 h-75 align-content-center align-items-center mainSearch mx-0 py-0 justify-content-between ">
+                                <input type="text" name="where" class="col-4 where me-4" placeholder="حدد وجهتك">
+                                <i class="bi bi-geo-alt position-absolute locationSearchIcon mt-1"></i>
+                                <input type="date" name="date" class="col-4 whenButton text-dark" id="dateInput"
+                                    placeholder="Select a date" oninput="handleDateInput()">
+                                <a href="search.html" class="col-1 mx-2 text-dark text-light searchButton my-0">
+                                    <i class="bi bi-search mt-1 text-light"></i></a>
+
+                            </div>
+
+                        </li>
+                        <li class="col-lg-3 align-content-start my-sm-2 ps-lg-0">
+                            <ul id="top_tools2"
+                                class="d-flex my-sm-2 position-static align-items-center justify-content-lg-end gap-1 ">
+                                <!-- <a href="search.html" target="_blank" title="Search in" class="searchSelect text-light pt-1"
+                                id="" name="tours_category"
+                                style="background-color: #500;border: 0px;font-weight: bold; text-align: center;font-size: 20px; position: static !important;">
+                            </a> -->
+
+                                <!-- **=================================SideBar start */ -->
+                                <li>
+                                    <div id="sidebar">
+                                        <div id="iconContainer" class="d-flex justify-content-center">
+
+                                        </div>
+                                        <div id="searchInPhone">
+
+                                        </div>
+                                        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                                        <div
+                                            class="row d-flex w-100 justify-content-around p-4 align-items-center align-content-center">
+                                            <a class="m-1 d-flex flex-column p-0" href="visit-saudi.html"
+                                                style="width: fit-content; text-align: center; align-items: center;"><img
+                                                    src="assets/img/اكتشف السعوديه.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light">اكتشف السعودية</h7>
+                                            </a>
+
+
+                                            <a class="m-1 d-flex flex-column p-0" href="events.html"
+                                                style="width: fit-content; text-align: center; align-items: center;"><img
+                                                    src="assets/img/المواسم والفعاليات.svg" width="80" height="80"
+                                                    alt="">
+                                                <h7 class="text-light"> المواسم والفعاليات</h7>
+                                            </a>
+                                            <a class="m-1 d-flex flex-column p-0" href="./experiences.html"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="assets/img/تجارب السعوديه.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> التجارب السياحية </h7>
+                                            </a>
+                                            <a class="m-1 d-flex flex-column p-0" href="./omra.html"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="assets/img/حج وعمره.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> الحج والعمرة </h7>
+                                            </a>
+                                            <a href="aboutUs.html" class="m-1 d-flex flex-column"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="assets/img/عن الشركه (1).svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> من نحن</h7>
+                                            </a>
+                                            <a href="chairMan.html" class="m-1 d-flex flex-column col-6 px-0"
+                                                style=" text-align: center; align-items: center;">
+                                                <img src="assets/img/المركز الاعلامي.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> كلمة رئيس مجلس الادارة </h7>
+                                            </a>
+                                            <!-- <div class="m-1 d-flex flex-column"
+                                        style="width: fit-content; text-align: center; align-items: center;">
+                                        <img src="assets/img/مزارات.svg" width="80" height="80" alt="">
+                                        <h7 class="text-light"> مزارات </h7>
+                                    </div> -->
+
+                                        </div>
+                                    </div>
+
+
+                                </li>
+
+                                <!-- **=================================SideBar start */ -->
+
+
+                                <div class="dropdown " id="transs">
+                                    <a class="btn  dropdown-toggle profileDropDown py-1 px-lg-2 ms-lg-2 d-flex" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                            class="bi bi-globe2 mt-1"></i>
+                                        <div class=" justify-content-center">English</div>
+                                    </a>
+
+                                    <ul class="dropdown-menu ">
+
+                                        <li id="transs" class="dropdown-item  justify-content-start ">
+                                            <a href="./../events.html" 
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+
+                                                <p class="mb-0 text-black-50">العربية</p>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="btn  dropdown-toggle profileDropDown py-1 px-1" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="profileBtn justify-content-center"><i
+                                                class="bi bi-person-circle mt-1 text-white"></i></div>
+                                    </a>
+
+                                    <ul class="dropdown-menu ">
+                                        <!-- <li class="dropdown-item   justify-content-start" id="">
+                                            <a href="check-out.html" data-bs-toggle="dropdown"
+                                                class="cart_bt search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3">
+                                            </a>
+                                        </li> -->
+                                        <li id="cartt" class="dropdown-item  justify-content-start ">
+                                            <a href="./cart.html" target="_blank"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-cart4"></i>
+                                                <p class="mb-0 basket">السلة</p>
+                                            </a>
+                                        </li>
+                                        <!-- <li id="wishListt" class="dropdown-item  justify-content-start ">
+                                                 <a href="./wishList.html"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-heart text-black-50 px-0 mx-0 py-0"></i>
+                                                <p class="mb-0 fav">قائمة المفضلات</p>
+                                            </a>
+                                        </li> -->
+                                        <li id="profile"
+                                            class="dropdown-item  justify-content-start  align-items-center">
+                                            <a href="./profile.html"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-person-circle mt-1 text-black-50"></i>
+                                                <p class="mb-0 mt-1 personal">الصفحه الشخصيه</p>
+                                            </a>
+                                        </li>
+                                        <li id="logOut"
+                                            class="dropdown-item  justify-content-start  align-items-center">
+                                            <a href="./register.html"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-box-arrow-right mt-1 text-black-50"></i>
+                                                <p class="mb-0 mt-1 personal"> تسجيل الخروج </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                                <li id="sideBarButton" class="px-lg-0">
+                                    <button class="btn sidebtn" onclick="openNav()"
+                                        style="                                    color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <!--!--------------- Navbar End -->
+
+
+    <!--//--------------- Fake Carousel Start -->
+    <div id="header-carousel" class="carousel slide carousel-fade d-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <section class="header-video w-100" style=" height: 668.29px; position: relative;">
+                <div id="hero_video">
+                    <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)"
+                        style="background-color: rgba(0, 0, 0, 0.6);">
+                        <div class="intro_title position-absolute w-100" style="top: 40%;">
+                            <h3 class="animated fadeInDown">ناشيونال ايجيبت للسياحة</h3>
+                            <p class="animated fadeInDown">هل تبحث عن تجارب جديدة في السعودية ؟</p>
+                            <!-- <a href="#" class="animated fadeInUp button_intro">View Tours</a>
+                                <a href="#" class="animated fadeInUp button_intro outline d-none d-sm-inline-block">View
+                                    Tickets</a> -->
+                            <!-- <a href="https://www.youtube.com/watch?v=Zz5cu72Gv5Y"
+                                    class="video animated fadeInUp button_intro outline">Play video</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /search_bar-->
+
+                <img src="assets/img/video_fi.png" alt="Image" class="header-video--media" data-video-src=""
+                    data-teaser-source="video/hero1" data-provider="" data-video-width="854" data-video-height="480">
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video">
+                    <source src="assets/img/hero1.mp4" type="video/mp4">
+                    <source src="assets/img/hero1.mp4" type="video/ogg">
+                </video>
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video">
+                    <source src="video/hero1.mp4" type="video/mp4">
+                    <source src="video/hero1.ogv" type="video/ogg">
+                </video>
+                <!-- /*===============================Video End*/ -->
+                <!--* ========================================================================================================== -->
+                <!-- /*===============================Sticky navigator End*/ -->
+                <div class="container-xxl w-100 position-absolute bottom-0">
+                    <ul class="nav nav-pills mb-0 position-absolute w-100 row align-items-center mx-0 justify-content-between g-0"
+                        id="pills-tab" role="tablist" dir="rtl" style=" bottom: 0;padding-right: 0px;">
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link active p-3" id="pills-home-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                التجارب السياحية
+                                <img src="assets/img/تجارب السعوديه.svg" class="mainCategory" style="" width="45"
+                                    height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+                            </button>
+                        </li>
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link p-3" id="pills-profile-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1">
+                                المواسم والفعاليات
+                                <img src="assets/img/المواسم والفعاليات.svg" class="mainCategory" style="" width="45"
+                                    height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                            </button>
+                        </li>
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link  p-3" id="pills-contact-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">
+                                اكتشف السعودية
+                                <img src="assets/img/اكتشف السعوديه.svg" class="mainCategory" style="" width="45"
+                                    height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                            </button>
+                        </li>
+
+                        <!-- <li class="nav-item col-2 d-flex align-items-center flex-column" role="presentation">
+                                <button class="nav-link  p-3" id="pills-contact-tab" data-bs-toggle="pill" type="button"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">
+                                    اكتشف قطر
+                                    <img src="assets/img/اكتشف السعوديه.svg" class="mainCategory" style="" width="45"
+                                        height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                                </button>
+                            </li> -->
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link  p-3" id="pills-islam-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-islam" aria-selected="false" tabindex="-1">
+                                الحج والعمرة
+                                <img src="assets/img/حج وعمره.svg" class="mainCategory" style="" width="45" height="45"
+                                    fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- /*===============================Sticky navigator End*/ -->
+            </section>
+        </div>
+
+    </div>
+    <!--//--------------- Fake Carousel End -->
+
+
+
+    <!--&--------------- Carousel Start -->
+    <div class="container-fluid mt-0 mb-5 pt-4 first-sectionInCategory">
+        <div style="height: 80px"></div>
+        <div class="py-5">
+            <div class="container-xxl main_title text-end my-3">
+                <h6 class="text-light">الرئيسيه <span>/ المواسم والفعاليات</span></h6>
+            </div>
+            <div class="main_title text-end mt-3 mb-2 d-flex flex-column first-s container-xxl">
+                <h1 class="text-light">فعاليات نوعية في مختلف مناطق المملكة</h1>
+                <div class="" style="width: 150px; height: 2px; background-color: #7c5500"></div>
+                <!-- <p class="mt-3 container-xxl text-light">
+                    تعتبر السياحة في المملكة العربية السعودية متنوعة ومثيرة، حيث تشمل مزيجًا فريدًا من التاريخ والثقافة
+                    والطبيعة
+                    الساحرة. يمكن للزوار استكشاف العديد من المعالم السياحية المميزة، بما في ذلك الأماكن المقدسة مثل مكة
+                    المكرمة
+                    والمدينة المنورة، إضافة إلى المواقع الثقافية مثل مدينة الدرعية التاريخية والقصور الأثرية.
+                    تعتبر السعودية أيضًا موطنًا لتضاريس طبيعية رائعة، حيث يمكن للزوار استكشاف صحاريها الواسعة وجبالها
+                    الشاهقة،
+                    وزيارة البحر الأحمر للتمتع بالرياضات المائية. مشروعات السياحة الضخمة.
+                </p> -->
+                <a href="allEvents.html" class="explore p-2 mt-5 d-flex gap-1 text-dark">
+                    <p class="p-0 m-0">اكتشف اكثر</p>
+                    <i class="bi bi-search"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--&--------------- Carousel Start -->
+
+
+    <!-- *=====================Events Slider Start -->
+    <section class="container1 bg-black py-5 text-center" id="team">
+        <h2 class="golden"><span> الفعاليات و المواسم </span></h2>
+        <div class="card__container swiper container-xxl">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <div class="main-card card p-0 overflow-hidden rounded-1">
+                                <a href="seasonDetails.html"
+                                    class="details overflow-hidden position-relative seasonDetails">
+                                    <img src="assets/img/dakar.jpg" alt="man wearing gray scarf" class="w-100" />
+                                    <div
+                                        class="cover-1 d-flex justify-content-center align-items-center gap-2 p-0 ps-3 pe-2">
+                                        <p class="p-0 m-0">18 يناير 2024 - 24 يناير 2024</p>
+                                    </div>
+                                    <div class="cover-2 d-flex justify-content-center align-items-center gap-2 p-0">
+                                        <p class="p-0 m-0">فعاليات 6</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">موسم داكار</h3> <!-- <p class="card__description">Marketeer</p>   -->
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <div class="main-card card p-0 overflow-hidden rounded-1">
+                                <a href="seasonDetails.html"
+                                    class="details overflow-hidden position-relative seasonDetails">
+                                    <img src="assets/img/deraia.jpeg" alt="man wearing gray scarf" class="w-100" />
+                                    <div
+                                        class="cover-1 d-flex justify-content-center align-items-center gap-2 p-0 ps-3 pe-2">
+                                        <p class="p-0 m-0">18 يناير 2024 - 24 يناير 2024</p>
+                                    </div>
+                                    <div class="cover-2 d-flex justify-content-center align-items-center gap-2 p-0">
+                                        <p class="p-0 m-0">فعاليات 6</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">موسم الدرعية</h3>
+                            <!-- <p class="card__description">Marketeer</p>   -->
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <div class="main-card card p-0 overflow-hidden rounded-1">
+                                <a href="seasonDetails.html"
+                                    class="details overflow-hidden position-relative seasonDetails">
+                                    <img src="assets/img/jeddahevents.jpg" alt="man wearing gray scarf" class="w-100" />
+                                    <div
+                                        class="cover-1 d-flex justify-content-center align-items-center gap-2 p-0 ps-3 pe-2">
+                                        <p class="p-0 m-0">18 يناير 2024 - 24 يناير 2024</p>
+                                    </div>
+                                    <div class="cover-2 d-flex justify-content-center align-items-center gap-2 p-0">
+                                        <p class="p-0 m-0">فعاليات 6</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">تقويم فعاليات جدة</h3>
+                            <!-- <p class="card__description">Marketeer</p> -->
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <div class="main-card card p-0 overflow-hidden rounded-1">
+                                <a href="seasonDetails.html"
+                                    class="details overflow-hidden position-relative seasonDetails">
+                                    <img src="assets/img/olamoments.png" alt="man wearing gray scarf" class="w-100" />
+                                    <div
+                                        class="cover-1 d-flex justify-content-center align-items-center gap-2 p-0 ps-3 pe-2">
+                                        <p class="p-0 m-0">18 يناير 2024 - 24 يناير 2024</p>
+                                    </div>
+                                    <div class="cover-2 d-flex justify-content-center align-items-center gap-2 p-0">
+                                        <p class="p-0 m-0">فعاليات 6</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">لحظات العلا</h3>
+                            <!-- <p class="card__description">Marketeer</p> -->
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <div class="main-card card p-0 overflow-hidden rounded-1">
+                                <a href="seasonDetails.html"
+                                    class="details overflow-hidden position-relative seasonDetails">
+                                    <img src="assets/img/ryiad.jpg" alt="man wearing gray scarf" class="w-100" />
+                                    <div
+                                        class="cover-1 d-flex justify-content-center align-items-center gap-2 p-0 ps-3 pe-2">
+                                        <p class="p-0 m-0">18 يناير 2024 - 24 يناير 2024</p>
+                                    </div>
+                                    <div class="cover-2 d-flex justify-content-center align-items-center gap-2 p-0">
+                                        <p class="p-0 m-0">فعاليات 6</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">موسم الرياض</h3>
+                            <!-- <p class="card__description">Marketeer</p> -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination" id="swiper"></div>
+        </div>
+    </section>
+    <!-- *=====================Events Slider Start -->
+
+    <!--^--------------- Cards start -->
+    <div id="pills-home" class="d-block container-xxl  w-100 mb-5">
+        <!----------------- lately start -->
+        <div class="row tab-pane fade show active mx-auto mt-5">
+            <div class="main_title">
+                <h2>
+                    أُضيف
+                    <span> مؤخرا </span>
+                </h2>
+                <!-- <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p> -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel timeLabel">
+                            <span class="timeLabel">18 يناير 2024 - 24 يناير 2024</span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/مهرجان تسويق تمور الاحساء المصنعة.jpeg" width="800" height="533"
+                                    class="img-fluid" alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    الاحساء
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">
+                                مهرجان تسويق تمور الاحساء المصنعة
+                            </h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel"> 22 يناير 2024 - 24 يناير 2024</span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/ملتقى السياحة السعودي.jpg" width="800" height="533"
+                                    class="img-fluid" alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    الرياض
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">
+                                ملتقى السياحة السعودي
+                            </h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">1 يناير 2024 - 24 فبراير 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/ليالي القيصرية.jpg" width="800" height="533" class="img-fluid"
+                                    alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    الاحساء
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">
+                                ليالي القيصرية
+                            </h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">4 يناير 2024 - 24 فبراير 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/zobaida.jpg" width="800" height="533" class="img-fluid" alt="Image"
+                                    style="height: 220px" />
+                                <div class="short_info">
+                                    مكة المكرمة
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">
+                                تفعيل خاصرة عين زبيدة
+                            </h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+        </div>
+        <!----------------- lately End -->
+
+        <!----------------- Week start -->
+        <div class="row tab-pane fade show active mx-auto mt-5">
+            <div class="main_title">
+                <h2>الاسبوع <span>الحالي</span></h2>
+                <!-- <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p> -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">18 يناير 2024 - 18 يناير 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/حفل كلاسيكي في الحِجر على ضوء الشموع.jpeg" width="800" height="533"
+                                    class="img-fluid" alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    العُلا
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">
+                                حفل كلاسيكي في الحِجر على ضوء الشموع
+                            </h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">19 يناير 2024 - 19 يناير 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/swiss.png" width="800" height="533" class="img-fluid" alt="Image"
+                                    style="height: 220px" />
+                                <div class="short_info">
+                                    الرياض
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">
+                                الأوركسترا السويسرية
+                            </h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">17 يناير 2024 - 20 يناير 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/polo el ola richard mel.jpg" width="800" height="533"
+                                    class="img-fluid" alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    العُلا
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">
+                                بطولة ريتشارد ميل العلا لبولو الصحراء
+                            </h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">19 يناير 2024 - 19 يناير 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/unlimited confrence.jpg" width="800" height="533" class="img-fluid"
+                                    alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    الزهران
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">
+                                مؤتمر تعلُم بلا حدود
+                            </h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+        </div>
+        <!----------------- Week End -->
+
+
+        <!-- small banners Start -->
+        <div class="w-100 justify-content-between container-xxl mx-auto row">
+            <div class="col-lg-6">
+                <div class="banner colored container mt-4" style="
+            background: #e04f6700 url(assets/img/banner3.png) no-repeat center
+                bottom;
+            margin-left: 0px;
+            background-size: cover;
+            margin-right: 0px;
+            width: 100%;
+            ">
+                    <!-- <h4>Discover our Top tours <span>from $34</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
+            </p> -->
+                    <!-- <a href="single_tour.html" class="btn_1 white">Read more</a> -->
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="banner colored container mt-4" style="
+                        margin-left: 0px;
+                        background: #e04f6700 url('assets/img/banner1\\(1\).png')
+                        no-repeatcenter bottom;
+                        background-size: cover;
+                        margin-right: 0px;
+                        width: 100%;">
+                </div>
+            </div>
+        </div>
+        <!-- small banners Start -->
+
+
+        <!----------------- This months start -->
+        <div class="row tab-pane fade show active mx-auto mt-5">
+            <div class="main_title">
+                <h2>الشهر <span>الحالي</span></h2>
+                <!-- <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p> -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+            visibility: visible;
+            animation-delay: 0.1s;
+            animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+            ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">15 أكتوبر 2023 - 7 مارس 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/around them gallery.jpg" width="800" height="533" class="img-fluid"
+                                    alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    الرياض
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">معرض من حولهم</h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">25 يناير 2023 - 25 أبريل 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/Jax District.jpeg" width="800" height="533" class="img-fluid"
+                                    alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    الدرعية
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">حي جاكس</h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">6 مايو 2023 - 20 أبريل 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/fire boat.jpg" width="800" height="533" class="img-fluid"
+                                    alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    جدة
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">القارب الناري</h2>
+                            <!-- <p>
+                                تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                على اللعب وحسب<a href="#"
+                                    style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                            </p> -->
+                            <!-- <div class="rating">
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill checked"></i>
+                                <i class="bi bi-star-fill "></i>
+                                <i class="bi bi-star-fill "></i><small>(75)</small>
+                            </div> -->
+                            <!-- <div>
+                                <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                    <span
+                                        style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                </h2>
+                                </h2>
+                                <h2 class="" style="    color: #ca9f44;
+                                font-weight: 900;
+                                font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                            </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                <i class="bi bi-heart"></i>
+                            </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+            </div>
+            <!-- End col -->
+            <div class="col-lg-3 col-md-6">
+                <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: zoomIn;
+            ">
+                    <div class="tour_container" style="
+                height: fit-content !important;
+                background-color: #ffffff00;
+              ">
+                        <div class="ribbon_3 popular timeLabel">
+                            <span class="timeLabel">16 أكتوبر 2023 - 23 يناير 2024 </span>
+                        </div>
+                        <div class="img_container">
+                            <a href="eventDetails.html">
+                                <img src="assets/img/font writing journey.jpg" width="800" height="533"
+                                    class="img-fluid" alt="Image" style="height: 220px" />
+                                <div class="short_info">
+                                    المدينة المنورة
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title px-2">
+                            <!-- <h3>رحلات <strong>الغوص</strong></h3> -->
+                            <h2 style="font-size: 15px; font-weight: 900">
+                                رحلة الكتابة والخط: دروب الروح
+                            </h2>
+                            <!-- <p>
+                                    تتنوّع خيارات الترفيه في مدينة جدة، لتسعد الأفراد والعائلات، إذ لا يقتصر تقويم الفعاليات
+                                    على اللعب وحسب<a href="#"
+                                        style="color: gray; text-decoration: underline;">....اقرأالمزيد</a>
+                                </p> -->
+                            <!-- <div class="rating">
+                                    <i class="bi bi-star-fill checked"></i>
+                                    <i class="bi bi-star-fill checked"></i>
+                                    <i class="bi bi-star-fill checked"></i>
+                                    <i class="bi bi-star-fill "></i>
+                                    <i class="bi bi-star-fill "></i><small>(75)</small>
+                                </div> -->
+                            <!-- <div>
+                                    <h2 class="text-decoration-none  mb-0" style="font-size: 20px;">
+                                        <span
+                                            style="text-decoration: line-through; color: black; margin-left: 4px;">٤٠٠٠٠</span>ج.م
+                                    </h2>
+                                    </h2>
+                                    <h2 class="" style="    color: #ca9f44;
+                                    font-weight: 900;
+                                    font-size: 28px;">٣٠٠٠٠ج.م</h2>
+                                </div> -->
+                            <!-- end rating -->
+                            <!-- <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
+                                    <i class="bi bi-heart"></i>
+                                </button> -->
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+            </div>
+            <!-- End col -->
+        </div>
+        <!----------------- This months End -->
+
+    </div>
+    <!--^--------------- Cards End -->
+
+    <!----------------- next months start -->
+
+    <div class="row tab-pane fade show active container-xxl mx-auto mt-5">
+        <div class="main_title">
+            <h2>
+                الأشهر
+                <span> القادمة </span>
+            </h2>
+            <!-- <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p> -->
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+            visibility: visible;
+            animation-delay: 0.1s;
+            animation-name: zoomIn;
+          ">
+                <div class="tour_container" style="height: fit-content !important; background-color: #ffffff00">
+                    <!-- <div class="ribbon_3 popular timeLabel"><span class="timeLabel">الاكثر رواجاً</span></div> -->
+                    <div class="img_container">
+                        <a href="#">
+                            <img src="assets/img/Blue Floral Welcoming Month Instagram Post.png" width="800"
+                                height="533" class="img-fluid" alt="Image" style="height: fit-content" />
+                        </a>
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col -->
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+            visibility: visible;
+            animation-delay: 0.1s;
+            animation-name: zoomIn;
+          ">
+                <div class="tour_container" style="height: fit-content !important; background-color: #ffffff00">
+                    <!-- <div class="ribbon_3 popular timeLabel"><span class="timeLabel">الاكثر رواجاً</span></div> -->
+                    <div class="img_container">
+                        <a href="#">
+                            <img src="assets/img/Blue Floral Welcoming Month Instagram Post (1).png" width="800"
+                                height="533" class="img-fluid" alt="Image" style="height: fit-content" />
+                        </a>
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col -->
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+            visibility: visible;
+            animation-delay: 0.1s;
+            animation-name: zoomIn;
+          ">
+                <div class="tour_container" style="height: fit-content !important; background-color: #ffffff00">
+                    <!-- <div class="ribbon_3 popular timeLabel"><span class="timeLabel">الاكثر رواجاً</span></div> -->
+                    <div class="img_container">
+                        <a href="#">
+                            <img src="assets/img/Blue Floral Welcoming Month Instagram Post (2).png" width="800"
+                                height="533" class="img-fluid" alt="Image" style="height: fit-content" />
+                        </a>
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col -->
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="wow zoomIn tab-pane fade show active d-block" id="pills-tourism-tab" role="tabpanel"
+                aria-labelledby="pills-profile-tab" data-wow-delay="0.1s" style="
+            visibility: visible;
+            animation-delay: 0.1s;
+            animation-name: zoomIn;
+          ">
+                <div class="tour_container" style="height: fit-content !important; background-color: #ffffff00">
+                    <!-- <div class="ribbon_3 popular timeLabel"><span class="timeLabel">الاكثر رواجاً</span></div> -->
+                    <div class="img_container">
+                        <a href="#">
+                            <img src="assets/img/Blue Floral Welcoming Month Instagram Post (2).png" width="800"
+                                height="533" class="img-fluid" alt="Image" style="height: fit-content" />
+                        </a>
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col -->
+        </div>
+    </div>
+    <!----------------- next months End -->
+
+
+    <!-- small banners Start -->
+    <div class="w-100 justify-content-between container-fluid mx-auto row mb-0">
+        <div class="col-lg-6">
+            <div class="banner colored container mt-4" style="
+            background: #e04f6700 url('assets/img/banner3.png') no-repeat center
+            bottom;
+            margin-left: 0px;
+            background-size: cover;
+            margin-right: 0px;
+            width: 100%;">
+                <!-- <h4>Discover our Top tours <span>from $34</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
+            </p> -->
+                <!-- <a href="single_tour.html" class="btn_1 white">Read more</a> -->
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="banner colored container mt-4" style="
+            background: #e04f6700 url('assets/img/banner1\ \(1\).png') no-repeat center
+            bottom;
+            margin-left: 0px;
+            background-size: cover;
+            margin-right: 0px;
+            width: 100%;">
+                <!-- <h4>Discover our Top tours <span>from $34</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
+            </p> -->
+                <!-- <a href="single_tour.html" class="btn_1 white">Read more</a> -->
+            </div>
+        </div>
+    </div>
+    <!-- small banners Start -->
+    <!--//-------------- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp py-2 ftr" id="footer" data-wow-delay="0.1s">
+        <div class="container-xxl">
+            <div class="row gx-5 justify-content-around align-items-center">
+                <div class="col-lg-3 col-md-6 footer-about">
+                    <div id="bg-footer"
+                        class="d-flex flex-column align-items-center justify-content-center text-center p-4 bg-logo-des-footer"
+                        style="">
+                        <style>
+                            @media(max-width:767px) {
+                                #bg-footer {
+                                    height: 95% !important;
+                                }
+                            }
+                        </style>
+                        <img src="assets/img/favIcon.png" alt=""
+                            style="width: 110px !important; height: 110px !important;" class="logo1 mt-4">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-1 mt-0"
+                            style="margin-right: 80px;">
+                            <h3 class="text-light mb-0"> </h3>
+                        </div>
+
+                        <p class="mb-0 mt-1"> للتواصل</p>
+                        <div class="d-flex mb-2 flex-row-reverse" style="direction: ltr !important; font-size: 27px;">
+                            <a href="tel:17115">
+                                <p class="mb-0 text-light">17115</p>
+                            </a>
+                            <!-- <i class="bi bi-telephone text-light me-2"></i> -->
+
+                        </div>
+
+                        <div class="d-flex pt-0 mb-2">
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z">
+                                    </path>
+                                </svg></a>
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                                    </path>
+                                </svg></a>
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                    </path>
+                                </svg></a>
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open ms-2" style=""></i>
+                            <p class="mb-0 text-white" style="">info@nationalegypt.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3 d-flex flex-column">
+                    <h4 class="text-white mb-3" style="color: #ca9f44 !important;">الروابط الأكثر تصفحاً
+                    </h4>
+                    <a class="btn btn-link footerLinks ftr ftr" href="visit-saudi.html"><i
+                            class="bi bi-arrow-left ms-1"></i>
+                        اكتشف السعودية
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href="./events.html"> <i
+                            class="bi bi-arrow-left ms-1"></i>فعاليات و مواسم
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href=""> <i class="bi bi-arrow-left ms-1"></i>
+
+                        نشاطات يمكنك القيام بها
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href="./supplierLogIn.html"> <i
+                            class="bi bi-arrow-left ms-1"></i>
+
+                        التسجيل كمزود خدمة
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3 d-flex flex-column">
+
+                    <h4 class="text-white mb-3" style="color: #ca9f44 !important;"> معلومات مفيدة
+
+                    </h4>
+                    <a class="btn btn-link footerLinks ftr" href="visit-saudi.html"><i
+                            class="bi bi-arrow-left ms-1"></i>
+                        أسئلة متكررة
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        اتصل بنا
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href=""> <i class="bi bi-arrow-left ms-1"></i>
+
+                        من نحن
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href="./supplierLogIn.html"> <i
+                            class="bi bi-arrow-left ms-1"></i>
+
+                        التسجيل كمزود خدمة
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5">
+                    <h4 class="text-white mb-3">اشترك في نشرتنا الاخبارية</h4>
+                    <p></p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input name="email" class="form-control border-primary w-100 py-3  text-right " type="email"
+                            style="height: 40px; border-radius: 5px;border-color: #ca9f44 !important;font-size: 13px;padding-left: 96px;"
+                            placeholder="البريد الالكتروني">
+                        <button type="button" class="btn  position-absolute top-0 start-0 text-light"
+                            style="height: 40px; background-color: #ca9f44; border-color: #ca9f44;"> اشتراك <i
+                                class="bi bi-send-plus me-1"></i></button>
+                    </div>
+                </div>
+                <hr>
+                <div
+                    class="col-md-6 text-center d-lg-flex align-items-center justify-content-end gap-lg-5  mb-md-0 w-100 mb-0">
+                    <div class="ms-lg-5 text-white">
+                        © <a class="text-light mb-0" href="#">National Egypt Tours</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Powered By <a class="mb-0" href="https://www.mv-is.com/en"
+                            style="color:#ca9f44 !important">Master Vision 2024</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--//-------------- Footer End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

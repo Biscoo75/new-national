@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Natioinal Egypt</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Natioinal Egypt" name="keywords">
+    <meta content="Natioinal Egypt" name="description">
+
+    <!-- Favicon -->
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;family=Rubik:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link href="assets/css/filter.css" rel="stylesheet">
+    <link href="assets/css/visit-style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .first-sectionInCategory {
+            position: relative;
+            /* background-image: url(../img/seasons-entertainment-culture.jpeg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .first-sectionInCategory::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            /* Ensure the overlay is behind the content */
+        }
+
+        .main_title {
+            position: relative;
+            z-index: 1;
+            /* Ensure the text is above the overlay */
+        }
+
+        .tittle {
+            color: #ca9f44;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+
+    <!--!--------------- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav
+            class="navbar navbar-expand-lg navbar-dark px- mt-0 container-fluid mx-auto py-lg-1 d-flex align-items-center justify-content-around">
+            <div class="container-xxl">
+                <div class="d-flex flex-row align-items-center">
+                    <a href="index.html"><img src="assets/img/favIcon.png" alt="" style="margin-left: 10px;"
+                            class="logo1">
+                    </a>
+                    <h5 class="my-0 text-white text-end">ناشيونال ايجيبت</h5>
+                </div>
+                <button class="navbar-toggler" onclick="openNav(); hideSideBarButton();" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                        </path>
+                    </svg>
+                </button>
+                <div class="w-100 collapse navbar-collapse " id="navbarCollapse">
+                    <ul
+                        class="list-unstyled row w-100 align-items-center align-content-center justify-content-between smallNav">
+                        <li class="col-lg-5 px-0  mx-auto " id="searchGroup">
+                            <div
+                                class="row  col-12 h-75 align-content-center align-items-center mainSearch mx-0 py-0 justify-content-between ">
+                                <input type="text" name="where" class="col-4 where me-4" placeholder="حدد وجهتك">
+                                <i class="bi bi-geo-alt position-absolute locationSearchIcon mt-1"></i>
+                                <input type="date" name="date" class="col-4 whenButton text-dark" id="dateInput"
+                                    placeholder="Select a date" oninput="handleDateInput()">
+                                <a href="search.html" class="col-1 mx-2 text-dark text-light searchButton my-0">
+                                    <i class="bi bi-search mt-1 text-light"></i></a>
+
+                            </div>
+
+                        </li>
+                        <li class="col-lg-3 align-content-start my-sm-2 ps-lg-0">
+                            <ul id="top_tools2"
+                                class="d-flex my-sm-2 position-static align-items-center justify-content-lg-end gap-1 ">
+                                <!-- <a href="search.html" target="_blank" title="Search in" class="searchSelect text-light pt-1"
+                                id="" name="tours_category"
+                                style="background-color: #500;border: 0px;font-weight: bold; text-align: center;font-size: 20px; position: static !important;">
+                            </a> -->
+
+                                <!-- **=================================SideBar start */ -->
+                                <li>
+                                    <div id="sidebar">
+                                        <div id="iconContainer" class="d-flex justify-content-center">
+
+                                        </div>
+                                        <div id="searchInPhone">
+
+                                        </div>
+                                        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                                        <div
+                                            class="row d-flex w-100 justify-content-around p-4 align-items-center align-content-center">
+                                            <a class="m-1 d-flex flex-column p-0" href="visit-saudi.html"
+                                                style="width: fit-content; text-align: center; align-items: center;"><img
+                                                    src="assets/img/اكتشف السعوديه.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light">اكتشف السعودية</h7>
+                                            </a>
+
+
+                                            <a class="m-1 d-flex flex-column p-0" href="events.html"
+                                                style="width: fit-content; text-align: center; align-items: center;"><img
+                                                    src="assets/img/المواسم والفعاليات.svg" width="80" height="80"
+                                                    alt="">
+                                                <h7 class="text-light"> المواسم والفعاليات</h7>
+                                            </a>
+                                            <a class="m-1 d-flex flex-column p-0" href="./experiences.html"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="assets/img/تجارب السعوديه.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> التجارب السياحية </h7>
+                                            </a>
+                                            <a class="m-1 d-flex flex-column p-0" href="./omra.html"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="assets/img/حج وعمره.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> الحج والعمرة </h7>
+                                            </a>
+                                            <a href="aboutUs.html" class="m-1 d-flex flex-column"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="assets/img/عن الشركه (1).svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> من نحن</h7>
+                                            </a>
+                                            <a href="chairMan.html" class="m-1 d-flex flex-column col-6 px-0"
+                                                style=" text-align: center; align-items: center;">
+                                                <img src="assets/img/المركز الاعلامي.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> كلمة رئيس مجلس الادارة </h7>
+                                            </a>
+                                            <!-- <div class="m-1 d-flex flex-column"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="assets/img/مزارات.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> مزارات </h7>
+                                            </div> -->
+
+                                        </div>
+                                    </div>
+
+
+                                </li>
+
+                                <!-- **=================================SideBar start */ -->
+
+
+                                <div class="dropdown " id="transs">
+                                    <a class="btn  dropdown-toggle profileDropDown py-1 px-lg-2 ms-lg-2 d-flex" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                            class="bi bi-globe2 mt-1"></i>
+                                        <div class=" justify-content-center">العربية</div>
+                                    </a>
+
+                                    <ul class="dropdown-menu ">
+
+                                        <li id="transs" class="dropdown-item  justify-content-start ">
+                                            <a href="././LTR/aboutUs.html"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+
+                                                <p class="mb-0 text-black-50">English</p>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="btn  dropdown-toggle profileDropDown py-1 px-1" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="profileBtn justify-content-center"><i
+                                                class="bi bi-person-circle mt-1 text-white"></i></div>
+                                    </a>
+
+                                    <ul class="dropdown-menu ">
+                                        <!-- <li class="dropdown-item   justify-content-start" id="">
+                                            <a href="check-out.html" data-bs-toggle="dropdown"
+                                                class="cart_bt search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3">
+                                            </a>
+                                        </li> -->
+                                        <li id="cartt" class="dropdown-item  justify-content-start ">
+                                            <a href="./cart.html" target="_blank"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-cart4"></i>
+                                                <p class="mb-0 basket">السلة</p>
+                                            </a>
+                                        </li>
+                                        <!-- <li id="wishListt" class="dropdown-item  justify-content-start ">
+                                                 <a href="./wishList.html"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-heart text-black-50 px-0 mx-0 py-0"></i>
+                                                <p class="mb-0 fav">قائمة المفضلات</p>
+                                            </a>
+                                        </li> -->
+                                        <li id="profile"
+                                            class="dropdown-item  justify-content-start  align-items-center">
+                                            <a href="./profile.html"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-person-circle mt-1 text-black-50"></i>
+                                                <p class="mb-0 mt-1 personal">الصفحه الشخصيه</p>
+                                            </a>
+                                        </li>
+                                        <li id="logOut"
+                                            class="dropdown-item  justify-content-start  align-items-center">
+                                            <a href="./register.html"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-box-arrow-right mt-1 text-black-50"></i>
+                                                <p class="mb-0 mt-1 personal"> تسجيل الخروج </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                                <li id="sideBarButton" class="px-lg-0">
+                                    <button class="btn sidebtn" onclick="openNav()"
+                                        style="                                    color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <!--!--------------- Navbar End -->
+
+    <!--//--------------Fake Carousel Start -->
+    <div id="header-carousel" class="carousel slide carousel-fade d-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <section class="header-video w-100" style=" height: 668.29px; position: relative;">
+                <div id="hero_video">
+                    <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)"
+                        style="background-color: rgba(0, 0, 0, 0.6);">
+                        <div class="intro_title position-absolute w-100" style="top: 40%;">
+                            <h3 class="animated fadeInDown">ناشيونال ايجيبت للسياحة</h3>
+                            <p class="animated fadeInDown">هل تبحث عن تجارب جديدة في السعودية ؟</p>
+                            <!-- <a href="#" class="animated fadeInUp button_intro">View Tours</a>
+                                <a href="#" class="animated fadeInUp button_intro outline d-none d-sm-inline-block">View
+                                    Tickets</a> -->
+                            <!-- <a href="https://www.youtube.com/watch?v=Zz5cu72Gv5Y"
+                                    class="video animated fadeInUp button_intro outline">Play video</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /search_bar-->
+
+                <img src="assets/img/video_fi.png" alt="Image" class="header-video--media" data-video-src=""
+                    data-teaser-source="video/hero1" data-provider="" data-video-width="854" data-video-height="480">
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video">
+                    <source src="assets/img/hero1.mp4" type="video/mp4">
+                    <source src="assets/img/hero1.mp4" type="video/ogg">
+                </video>
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video">
+                    <source src="video/hero1.mp4" type="video/mp4">
+                    <source src="video/hero1.ogv" type="video/ogg">
+                </video>
+                <!-- /*===============================Video End*/ -->
+                <!--* ========================================================================================================== -->
+                <!-- /*===============================Sticky navigator End*/ -->
+                <div class="container-xxl w-100 position-absolute bottom-0">
+                    <ul class="nav nav-pills mb-0 position-absolute w-100 row align-items-center mx-0 justify-content-between g-0"
+                        id="pills-tab" role="tablist" dir="rtl" style=" bottom: 0;padding-right: 0px;">
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link active p-3" id="pills-home-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                التجارب السياحية
+                                <img src="assets/img/تجارب السعوديه.svg" class="mainCategory" style="" width="45"
+                                    height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+                            </button>
+                        </li>
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link p-3" id="pills-profile-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1">
+                                المواسم والفعاليات
+                                <img src="assets/img/المواسم والفعاليات.svg" class="mainCategory" style="" width="45"
+                                    height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                            </button>
+                        </li>
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link  p-3" id="pills-contact-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">
+                                اكتشف السعودية
+                                <img src="assets/img/اكتشف السعوديه.svg" class="mainCategory" style="" width="45"
+                                    height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                            </button>
+                        </li>
+
+                        <!-- <li class="nav-item col-2 d-flex align-items-center flex-column" role="presentation">
+                                <button class="nav-link  p-3" id="pills-contact-tab" data-bs-toggle="pill" type="button"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">
+                                    اكتشف قطر
+                                    <img src="assets/img/اكتشف السعوديه.svg" class="mainCategory" style="" width="45"
+                                        height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                                </button>
+                            </li> -->
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link  p-3" id="pills-islam-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-islam" aria-selected="false" tabindex="-1">
+                                الحج والعمرة
+                                <img src="assets/img/حج وعمره.svg" class="mainCategory" style="" width="45" height="45"
+                                    fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- /*===============================Sticky navigator End*/ -->
+            </section>
+        </div>
+
+    </div>
+    <!--//--------------- Carousel End -->
+
+
+
+
+
+    <!--&-------------- Carousel Start -->
+    <div class="container-fluid mt-0 mb-5 pt-4 first-sectionInCategory ">
+        <div style="height: 80px;">
+        </div>
+        <div class="py-5">
+            <div class="container-xxl main_title text-end  my-3">
+                <h6 class="text-light">الرئيسيه <span>/ من نحن</span></h6>
+            </div>
+            <div class="main_title text-end  mt-3  mb-2 d-flex flex-column first-s container-xxl">
+                <h1 class="text-light text-center">من نحن
+                </h1>
+                <h1 class="text-center tittle">ناشيونال ايجيبت للسياحة
+                </h1>
+            </div>
+        </div>
+
+    </div>
+    <!--&-------------- Carousel End -->
+
+
+    <!--~========================== main Staaart -->
+    <!--?==========================  about us  start-->
+    <div class="row container-xxl mx-auto  aboutUsContainer">
+        <div class="col-lg-7">
+            <h3>من نحن
+            </h3>
+            <p>
+                نعرف ما تستحق هذا هو الشعار الذي تم اختيارة منذ اليوم الاول لانشاء شركة ناشيونال ايجيبت للسياحة فى
+                فبراير 1997 و هو يعبر عن تقديرنا الكامل لكل عملاء شركتنا المميزون لاننا و بحق نقدم كافة الخدمات التى
+                يستحقها عميلنا الذي يثق بأننا نستطيع تلبية كافة الخدمات التى يحتاحها بأفضل شكل ممكن مقدرين تماما قيمة
+                الوقت و المال فى حياة عملائنا.
+                رؤية ناشيونال ايجيبت قائمة على روح العائلة لذا يعتبر كافة موظفينا و عملائنا جزء من عائلتنا الكبيرة لذا
+                كل منا يساهم بما يستطيع لنجاح هذه العائلة.
+                عندما تجتمع معانى الرفاهية مع الاحسان فى العبادة على خطى سيد الخلق سيدنا و حبيبنا و شفيعنا محمد صلى الله
+                علية و سلم فإن الاختيار الافضل لعملائنا الكرام بالتاكيد هو ناشيونال ايجيبت للسياحة .
+                رحلات الحج و العمرة بمفهوم ناشيونال ايجيبت للسياحة ليست فقط مناسك تؤدي . انما هى رحلة روحانيه تنقى الروح
+                و القلب و الجسد و ندرك فيها المعنى الحقيقى لوجودنا فى الحياة لنصل لمرحلة السكينة و حسن الظن بالله . دور
+                ناشيونال ايجيبت فيها هو توفير كل سبل الرعاية و الرفاهية مما يعطى عميلنا الفرصة كاملة للتفرغ للعبادة
+                باخلاص و احسان …
+                يسعى كل موظف في شركة ناشيونال ايجيبت للسياحة للارتقاء لأعلى المعايير السلوكية والاحترافية والمهنيه. ونحن
+                نعتقد أن ثقافتنا ومبادءنا الأساسية قد ميزتنا عن الآخرين وساهمت في تحقيق نجاحاتنا
+            </p>
+        </div>
+        <div class="col-lg-5">
+            <img src="./assets/img/00.png" alt="" style="width: 100%;">
+        </div>
+    </div>
+    <!--?==========================  about us  End-->
+
+    <!--^==========================  our vision start-->
+    <div class="row container-xxl mx-auto ourVisionContainer">
+        <div class="col-lg-5">
+            <img src="./assets/img/00.png" alt="" style="width: 100%;">
+        </div>
+        <div class="col-lg-7">
+            <h3>رؤيتنا
+            </h3>
+            <p>
+                نعرف ما تستحق هذا هو الشعار الذي تم اختيارة منذ اليوم الاول لانشاء شركة ناشيونال ايجيبت للسياحة فى
+                فبراير 1997 و هو يعبر عن تقديرنا الكامل لكل عملاء شركتنا المميزون لاننا و بحق نقدم كافة الخدمات التى
+                يستحقها عميلنا الذي يثق بأننا نستطيع تلبية كافة الخدمات التى يحتاحها بأفضل شكل ممكن مقدرين تماما قيمة
+                الوقت و المال فى حياة عملائنا.
+                رؤية ناشيونال ايجيبت قائمة على روح العائلة لذا يعتبر كافة موظفينا و عملائنا جزء من عائلتنا الكبيرة لذا
+                كل منا يساهم بما يستطيع لنجاح هذه العائلة.
+                عندما تجتمع معانى الرفاهية مع الاحسان فى العبادة على خطى سيد الخلق سيدنا و حبيبنا و شفيعنا محمد صلى الله
+
+            </p>
+        </div>
+    </div>
+    <!--^==========================  our vision  End-->
+    <!--*==========================  Mision  start-->
+    <div class="row container-xxl mx-auto  aboutUsContainer">
+        <div class="col-lg-7">
+            <h3>مهمتنا
+            </h3>
+            <p>
+                نعرف ما تستحق هذا هو الشعار الذي تم اختيارة منذ اليوم الاول لانشاء شركة ناشيونال ايجيبت للسياحة فى
+                فبراير 1997 و هو يعبر عن تقديرنا الكامل لكل عملاء شركتنا المميزون لاننا و بحق نقدم كافة الخدمات التى
+                يستحقها عميلنا الذي يثق بأننا نستطيع تلبية كافة الخدمات التى يحتاحها بأفضل شكل ممكن مقدرين تماما قيمة
+                الوقت و المال فى حياة عملائنا.
+                رؤية ناشيونال ايجيبت قائمة على روح العائلة لذا يعتبر كافة موظفينا و عملائنا جزء من عائلتنا الكبيرة لذا
+                كل منا يساهم بما يستطيع لنجاح هذه العائلة.
+                عندما تجتمع معانى الرفاهية مع الاحسان فى العبادة على خطى سيد الخلق سيدنا و حبيبنا و شفيعنا محمد صلى الله
+                علية و سلم فإن الاختيار الافضل لعملائنا الكرام بالتاكيد هو ناشيونال ايجيبت للسياحة .
+                رحلات الحج و العمرة بمفهوم ناشيونال ايجيبت للسياحة ليست فقط مناسك تؤدي . انما هى رحلة روحانيه تنقى الروح
+                و القلب و الجسد و ندرك فيها المعنى الحقيقى لوجودنا فى الحياة لنصل لمرحلة السكينة و حسن الظن بالله . دور
+                ناشيونال ايجيبت فيها هو توفير كل سبل الرعاية و الرفاهية مما يعطى عميلنا الفرصة كاملة للتفرغ للعبادة
+                باخلاص و احسان …
+                يسعى كل موظف في شركة ناشيونال ايجيبت للسياحة للارتقاء لأعلى المعايير السلوكية والاحترافية والمهنيه. ونحن
+                نعتقد أن ثقافتنا ومبادءنا الأساسية قد ميزتنا عن الآخرين وساهمت في تحقيق نجاحاتنا
+            </p>
+        </div>
+        <div class="col-lg-5">
+            <img src="./assets/img/00.png" alt="" style="width: 100%;">
+        </div>
+    </div>
+    <!--*==========================  Mision   End-->
+
+    <!--~========================== main End -->
+
+
+    <!-- banner start-->
+    <div class="banner colored container-xxl p-0 mt-3 w-100" style="background: #e04f6700 url(assets/img/banner2.png) no-repeat center bottom !important;overflow:visible;height: 189px;
+        box-shadow: none;">
+    </div>
+    <!-- banner end-->
+
+
+
+
+    <!--//-------------- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp py-2 ftr" id="footer" data-wow-delay="0.1s">
+        <div class="container-xxl">
+            <div class="row gx-5 justify-content-around align-items-center">
+                <div class="col-lg-3 col-md-6 footer-about">
+                    <div id="bg-footer"
+                        class="d-flex flex-column align-items-center justify-content-center text-center p-4 bg-logo-des-footer"
+                        style="">
+                        <style>
+                            @media(max-width:767px) {
+                                #bg-footer {
+                                    height: 95% !important;
+                                }
+                            }
+                        </style>
+                        <img src="assets/img/favIcon.png" alt=""
+                            style="width: 110px !important; height: 110px !important;" class="logo1 mt-4">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-1 mt-0"
+                            style="margin-right: 80px;">
+                            <h3 class="text-light mb-0"> </h3>
+                        </div>
+
+                        <p class="mb-0 mt-1"> للتواصل</p>
+                        <div class="d-flex mb-2 flex-row-reverse" style="direction: ltr !important; font-size: 27px;">
+                            <a href="tel:17115">
+                                <p class="mb-0 text-light">17115</p>
+                            </a>
+                            <!-- <i class="bi bi-telephone text-light me-2"></i> -->
+
+                        </div>
+
+                        <div class="d-flex pt-0 mb-2">
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z">
+                                    </path>
+                                </svg></a>
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                                    </path>
+                                </svg></a>
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                    </path>
+                                </svg></a>
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open ms-2" style=""></i>
+                            <p class="mb-0 text-white" style="">info@nationalegypt.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3 d-flex flex-column">
+                    <h4 class="text-white mb-3" style="color: #ca9f44 !important;">الروابط الأكثر تصفحاً
+                    </h4>
+                    <a class="btn btn-link footerLinks ftr ftr" href="visit-saudi.html"><i
+                            class="bi bi-arrow-left ms-1"></i>
+                        اكتشف السعودية
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href="./events.html"> <i
+                            class="bi bi-arrow-left ms-1"></i>فعاليات و مواسم
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href=""> <i class="bi bi-arrow-left ms-1"></i>
+
+                        نشاطات يمكنك القيام بها
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href="./supplierLogIn.html"> <i
+                            class="bi bi-arrow-left ms-1"></i>
+
+                        التسجيل كمزود خدمة
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3 d-flex flex-column">
+
+                    <h4 class="text-white mb-3" style="color: #ca9f44 !important;"> معلومات مفيدة
+
+                    </h4>
+                    <a class="btn btn-link footerLinks ftr" href="visit-saudi.html"><i
+                            class="bi bi-arrow-left ms-1"></i>
+                        أسئلة متكررة
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        اتصل بنا
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href=""> <i class="bi bi-arrow-left ms-1"></i>
+
+                        من نحن
+                    </a>
+                    <a class="btn btn-link footerLinks ftr" href="./supplierLogIn.html"> <i
+                            class="bi bi-arrow-left ms-1"></i>
+
+                        التسجيل كمزود خدمة
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5">
+                    <h4 class="text-white mb-3">اشترك في نشرتنا الاخبارية</h4>
+                    <p></p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input name="email" class="form-control border-primary w-100 py-3  text-right " type="email"
+                            style="height: 40px; border-radius: 5px;border-color: #ca9f44 !important;font-size: 13px;padding-left: 96px;"
+                            placeholder="البريد الالكتروني">
+                        <button type="button" class="btn  position-absolute top-0 start-0 text-light"
+                            style="height: 40px; background-color: #ca9f44; border-color: #ca9f44;"> اشتراك <i
+                                class="bi bi-send-plus me-1"></i></button>
+                    </div>
+                </div>
+                <hr>
+                <div
+                    class="col-md-6 text-center d-lg-flex align-items-center justify-content-end gap-lg-5  mb-md-0 w-100 mb-0">
+                    <div class="ms-lg-5 text-white">
+                        © <a class="text-light mb-0" href="#">National Egypt Tours</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Powered By <a class="mb-0" href="https://www.mv-is.com/en"
+                            style="color:#ca9f44 !important">Master Vision 2024</a>
+                    </div>
+                    <div class="d-lg-flex gap-1 me-lg-5">
+                        <img src="./assets/img/VISA.png" width="70" alt="">
+                        <img src="./assets/img/masterCard.png" width="70" alt="">
+                        <img src="./assets/img/PayPal.png" width="70" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--//-------------- Footer End -->
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+
+</body>
+
+</html>
