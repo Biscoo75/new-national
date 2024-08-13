@@ -108,7 +108,7 @@
         smartSpeed: 1000,
         responsive: {
             0: {
-                items: 2
+                items: 3
             },
             576: {
                 items: 4
