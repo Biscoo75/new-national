@@ -566,6 +566,7 @@
     --primary-text: #FFFBF6;
     --primary-headers: #23282cc7;
     --secondary: #34ad54;
+    --secondary-text: #DEAD69;
     --light: #eef9ff;
     --dark: #091e3e;
 }
@@ -2093,7 +2094,7 @@ s ul#top_tools2 li i {
 }
 
 .checked {
-    color: #DEAD69;
+    color: var(--secondary-text);
     /* background-color: orange; */
 
 }
@@ -2103,7 +2104,7 @@ s ul#top_tools2 li i {
     font-size: 12px;
     font-weight: 800;
     line-height: 18px;
-    color: #DEAD69;
+    color: var(--secondary-text);
 }
 
 /*^------------------------ Cards End ----------------------------------------> */
@@ -2560,7 +2561,7 @@ a.btn_1,
     font-size: 35px;
     font-family: 'main';
     font-weight: 700;
-    color: #DEAD69;
+    color: var(--secondary-text);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2926,7 +2927,7 @@ h3 span,
 h4 span,
 h5 span,
 h6 span {
-    color: #DEAD69;
+    color: var(--secondary-text);
 }
 
 ul.list_order {
