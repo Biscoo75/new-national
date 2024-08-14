@@ -1481,9 +1481,11 @@ s ul#top_tools2 li i {
 .guideCt {
     /* margin-top: 106px; */
     background: transparent;
-    border-bottom: 1px solid var(--secondary-text);
+    padding: 10px 0;
+    /* border-bottom: 1px solid var(--secondary-text); */
     border-radius: 0px;
     z-index: 2;
+    box-shadow: 0px 1px 3px 1px #0000001A;
 
 }
 
@@ -1494,8 +1496,9 @@ s ul#top_tools2 li i {
 }
 
 .guide-item.active {
-    border-bottom: 2px solid var(--secondary-text);
+    border-bottom: 3px solid var(--secondary-text);
     /* Underline effect */
+    font-weight: bolder;
 }
 
 .guideCt.scrolled {
