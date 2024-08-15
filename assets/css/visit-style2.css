@@ -564,7 +564,7 @@
 :root {
     --primary: #F2CCA2;
     --primary-text: #FFFBF6;
-    --secondary-text: #ca9f44;
+    --secondary-text: #D19E52;
     --primary-headers: #23282cc7;
     --secondary: #34ad54;
     --light: #eef9ff;
@@ -2919,7 +2919,7 @@ input[type=range]:focus {
     font-size: 16px;
     font-weight: 400 !important;
     /* line-height: 17.86px; */
-    text-align: right;
+    /* text-align: right; */
     color: var(--primary);
 }
 
@@ -3236,6 +3236,31 @@ input[type=range]:focus {
     }
 }
 
+.showMore {
+    /* width: Fixed (137px)px;
+    height: Fixed (33px)px; */
+
+    border-radius: 8px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #F2CCA2 !important;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0px 3px 10px 0px #0000002B;
+}
+
+.showMore:hover {
+    border-radius: 8px;
+    border: 1px solid #F2CCA2;
+    opacity: 0px;
+    background: #fff !important;
+    text-decoration: none;
+    font-weight: bold;
+    color: #daaf7f;
+    box-shadow: 0px 3px 10px 0px #0000002B;
+
+}
+
 /*&-------------------------- about us page  Start------------------------------------------ */
 
 .aboutUsContainer {
@@ -3366,8 +3391,249 @@ footer .copyright {
     font-weight: 900;
     font-size: 50px;
 
-    color: var(--primary);
+    color:
+     var(--primary);
 }
+
+/*!================================visit video start============================ */
+
+
+.intro_title {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.intro_title h3 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.intro_title h3 strong span {
+    color: #fff;
+}
+
+/* New v1.2*/
+.intro_title.error h1 {
+    font-size: 130px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Home 3 */
+.header-video {
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+
+    .header-video,
+    #hero_video {
+        height: 350px !important;
+    }
+
+    #hero_video {
+        height: 350px !important;
+        /* background: #ddd url(../video/hero1.mp4) no-repeat center center; */
+        background-size: cover;
+    }
+}
+
+#hero_video {
+    position: relative;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+    display: table;
+    height: 100%;
+    z-index: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -110px;
+
+}
+
+#hero_video a.video {
+    display: none;
+}
+
+@media (min-width: 767px) {
+    .header-video video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
+.header-video video {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.teaser-video {
+    width: 100%;
+    height: auto;
+}
+
+.header-video--media {
+    width: 100%;
+    height: auto;
+}
+
+/* Header */
+#logo {
+    margin-top: 10px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    padding: 10px 0;
+}
+
+header#plain {
+    background-color: #fff;
+}
+
+header #logo .logo_sticky {
+    display: none;
+}
+
+header.sticky #logo .logo_normal {
+    display: none;
+}
+
+header.sticky #logo .logo_sticky {
+    display: block;
+}
+
+/* logo home with h1 */
+#logo_home h1 {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+#logo_home h1 a,
+header.sticky #logo_home h1 a,
+header#plain #logo_home h1 a,
+header#colored #logo_home h1 a {
+    width: 160px;
+    height: 34px;
+    display: block;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 160px 34px;
+    text-indent: -9999px;
+}
+
+header.sticky #logo_home h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+header.sticky #logo_home h1 a {
+    background-image: url(../img/logo_sticky.png);
+}
+
+header#plain #logo_home h1 a {
+    background-image: url(../img/logo_sticky.png);
+}
+
+header.sticky#colored #logo_home h1 a {
+    background-image: url(../img/logo_sticky_colored.png);
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+
+    #logo_home h1 a,
+    header#colored #logo_home h1 a {
+        background-image: url(../img/logo_2x.png);
+        background-size: 160px 34px;
+    }
+
+    header.sticky #logo_home h1 a,
+    header#plain #logo_home h1 a {
+        background-image: url(../img/logo_sticky_2x.png);
+        background-size: 160px 34px;
+    }
+
+    header.sticky#colored #logo_home h1 a {
+        background-image: url(../img/logo_sticky_colored_2x.png);
+        background-size: 160px 34px;
+    }
+}
+
+header.sticky #top_line {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+header.sticky {
+    -webkit-box-shadow: 0px 2px 10px -2px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 2px 10px -2px rgba(0, 0, 0, 0.41);
+    box-shadow: 0px 2px 10px -2px rgba(0, 0, 0, 0.41);
+    background-color: #fff;
+    padding-bottom: 0;
+}
+
+nav {
+    margin-top: 20px !important;
+    position: relative;
+}
+
+.sticky nav {
+    margin-top: 10px !important;
+}
+
+.sticky #logo {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+#top_line {
+    color: #fff;
+    height: 28px;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 11px;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 999999;
+}
+.main_title_ct
+{
+    margin-top: -70px;
+}
+/*!================================visit video end============================ */
+
 /*//-------------------------- Footer  Start------------------------------------------ */
 
 .footerLinks {
