@@ -211,6 +211,8 @@ function hideSideBarButton() {
     var sideBarButton = document.getElementById('sideBarButton');
     sideBarButton.style.display = 'none';
 }
+
+
 //! inputs placeholders
 function handleDateInput() {
     // Get the input element
@@ -416,15 +418,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    flatpickr("#datepicker", {
+        // your options here
+    });
 
-
-
-
-
-
-
-
-
-flatpickr("#datepicker", {
-    // Options for Flatpickr
+    flatpickr("#another-datepicker", {
+        // your options here
+    });
+    
+    flatpickr("#another-datepicker-two", {
+        // your options here
+    });
+    flatpickr("#datepicker-in-cat", {
+        // your options here
+    });
 });
+function handleDateInput(event) {
+    const inputId = event.target.id;
+
+    if (inputId === 'datepicker') {
+        // Handle datepicker input
+    } else if (inputId === 'another-datepicker') {
+        // Handle another datepicker input
+    }
+    else if (inputId === 'another-datepicker-two') {
+        // Handle another datepicker input
+    }
+    else if (inputId === 'datepicker-in-cat') {
+        // Handle another datepicker input
+    }
+}
+
