@@ -449,4 +449,17 @@ function handleDateInput(event) {
         // Handle another datepicker input
     }
 }
-
+       // Initialize Flatpickr
+                            flatpickr("#datepicker-in-cat", {
+                                // Options for Flatpickr
+                                dateFormat: "Y-m-d",
+                                onChange: function(selectedDates, dateStr, instance) {
+                                    handleDateInput(selectedDates, dateStr, instance);
+                                }
+                            });
+                        
+                            // Handle date input changes
+                            function handleDateInput(selectedDates, dateStr, instance) {
+                                console.log("Selected Date:", dateStr);
+                                // Add custom logic to handle the date input
+                            }

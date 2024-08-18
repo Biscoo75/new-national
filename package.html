@@ -38,71 +38,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <style>
- 
 
-
-        @media(max-width:992px) {
-            .navbar {
-                background-color: #fff;
-            }
-        }
-
-        .nav-item {
-            font-size: 17px !important
-        }
-
-        .btn-form {
-            background-color: #2496d4;
-            color: white;
-        }
-
-        .h4-text-dark {
-            color: white !important;
-        }
-
-        @media(max-width:767px) {
-            #header-carousel {
-                height: 400px;
-            }
-
-            .carousel-item img {
-                height: 400px;
-            }
-        }
-
-        @media(min-width:767px) {
-            body {
-                padding-top: 40px;
-            }
-        }
-
-        .col-7 {
-            width: 55% !important;
-        }
-
-        .sticky-top.navbar-dark {
-            background-color: #fff !important;
-        }
-
-        .stickyUl {
-            position: relative;
-            top: 0;
-            transition: top 0.3s;
-            z-index: 1000;
-        }
-
-        .stickyUl.sticky {
-            position: fixed;
-            top: 0;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .navbar-dark
-            {
-                /* top: 50px; */
-            }
-    </style> -->
 </head>
 
 <body>
@@ -113,7 +49,7 @@
     </div>
     <!-- Spinner End -->
     <!--!--------------- Navbar Start -->
-    <div class="container-fluid position-relative p-0 ">
+    <div class="container-fluid position-relative p-0 nav-ct">
         <nav
             class="navbar navbar-expand-lg navbar- px- mt-0 container-fluid mx-auto py-lg-1  d-flex align-items-center justify-content-around">
             <div class="container-xxl row py-2">
@@ -121,22 +57,24 @@
                     <a href="index.html"><img class="ms-0 logo-respo" src="assets/img/favIcon.png" alt=""
                             style="margin-left: 10px;" class="logo1">
                     </a>
-                    <!-- <h5 class="my-0 text-white text-end"> 
-                     ناشيونال ايجيبت للسياحة
-                        </h5> -->
+                    <!-- <h5 class="my-0 text-white text-start"> 
+                 ناشيونال ايجيبت للسياحة
+                    </h5> -->
                 </div>
-                <div class="col-3 smallHotLineCT">
-                    <img class="smallHotLine" src="./assets/img/Vector.png" alt="">
+                <div class="row col-8 small-ho-ct justify-content-end">
+                    <div class="col-5 smallHotLineCT">
+                        <img class="smallHotLine" src="./assets/img/Vector.png" alt="">
+                    </div>
+                    <button class="navbar-toggler col-4" onclick="openNav(); hideSideBarButton();" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
-                <button class="navbar-toggler col-4" onclick="openNav(); hideSideBarButton();" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
-                        </path>
-                    </svg>
-                </button>
                 <div class="collapse  navbar-collapse justify-content-end  col-lg-9" id="navbarCollapse">
                     <ul class="list-unstyled w-100 row  mb-lg-0 align-items-center justify-content-between smallNav">
                         <li class="col-lg-6 px-0  mx-auto " id="searchGroup">
@@ -242,10 +180,10 @@
 
                                     <ul class="dropdown-menu  prof-dd">
                                         <!-- <li class="dropdown-item   justify-content-start" id="">
-                                            <a href="check-out.html" data-bs-toggle="dropdown"
-                                                class="cart_bt search-overlay-menu-btn  d-flex justify-content-start gap-lg-3">
-                                            </a>
-                                        </li> -->
+                                        <a href="check-out.html" data-bs-toggle="dropdown"
+                                            class="cart_bt search-overlay-menu-btn  d-flex justify-content-start gap-lg-3">
+                                        </a>
+                                    </li> -->
                                         <li id="cartt" class="dropdown-item  justify-content-start ">
                                             <a href="./cart.html" target="_blank"
                                                 class="search-overlay-menu-btn text-black-lg-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
@@ -253,13 +191,13 @@
                                                 <p class="mb-0 basket">السلة</p>
                                             </a>
                                         </li>
-                                        <!-- <li id="wishListt" class="dropdown-item  justify-content-start ">
-                                                 <a href="./wishList.html"
-                                                class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
-                                                <i class="bi bi-heart  px-0 mx-0 py-0"></i>
-                                                <p class="mb-0 fav">قائمة المفضلات</p>
-                                            </a>
-                                        </li> -->
+                                        <li id="wishListt" class="dropdown-item  justify-content-start ">
+                                             <a href="./wishList.html"
+                                            class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                            <i class="bi bi-heart  px-0 mx-0 py-0"></i>
+                                            <p class="mb-0 fav">قائمة المفضلات</p>
+                                        </a>
+                                    </li>
                                         <li id="profile"
                                             class="dropdown-item  justify-content-start  align-items-center">
                                             <a href="./profile.html"
@@ -302,6 +240,8 @@
     </div>
     <!-- Navbar End -->
     <!--!--------------- Navbar End -->
+
+
 
 
     <!--&--------------- GUIDE START -->
@@ -457,7 +397,7 @@
             </div>
             <select type="number" placeholder=" النزلاء" class="col-12 people mb-3">
                 <option value="اختار الوقت">اختار الوقت <img src="./assets/img/people.svg" alt=""></option>
-                <option value="اختار الوقت">اختار  <img src="./assets/img/people.svg" alt=""></option>
+                <option value="اختار الوقت">اختار <img src="./assets/img/people.svg" alt=""></option>
                 <option value="اختار الوقت">اختار الوييقت <img src="./assets/img/people.svg" alt=""></option>
                 <option value="اختار الوقت">اختار ص <img src="./assets/img/people.svg" alt=""></option>
             </select>
@@ -481,110 +421,110 @@
         </form>
         <!--**-----------check-out end -->
         <section id="afteroverView" style="height: 40px;">
-            </section>
+        </section>
 
 
-            <!--?-------------  overview start -->
-            <section id="afteroverView" class="my-5 container-fluid col-lg-7 mx-1" style="">
-                <div class="" id="overView">
-                    <h5 class="overView-title">نظرة عامة</h5>
-                    <p class="overView-desc">
-                        حج سريع (10 ايام - 9 ليالى) برنامج كدانة (شامل تذاكر الطيران)_من الثلاثاء 11 يونيه 2024م / 5 ذو
-                        الحجة 1445هـ إلى الخميس 20 يونيه 2024م / 14 ذو الحجة 1445هـ
-                        <br>
-                        استعد لتجربة لا تُنسى مع رحلة الحج الفاخرة من شركة ناشيونال إيجيبت. نحن نقدم لك أعلى مستويات
-                        الراحة
-                        والفخامة أثناء أداء مناسك الحج، حيث نضمن لك تجربة سلسة ومميزة تترك ذكريات تدوم للأبد.
-                        يمكنك الاستمتاع بكل لحظة من رحلة الحج بثقة وسلام. اختر رحلة الحج الفاخرة مع شركة ناشيونال إيجيبت
-                        لتجربة دينية مميزة، تمنحك الراحة والفخامة والراحة التي تستحقها أثناء أداء مناسك الحج.
+        <!--?-------------  overview start -->
+        <section id="afteroverView" class="my-5 container-fluid col-lg-7 mx-1" style="">
+            <div class="" id="overView">
+                <h5 class="overView-title">نظرة عامة</h5>
+                <p class="overView-desc">
+                    حج سريع (10 ايام - 9 ليالى) برنامج كدانة (شامل تذاكر الطيران)_من الثلاثاء 11 يونيه 2024م / 5 ذو
+                    الحجة 1445هـ إلى الخميس 20 يونيه 2024م / 14 ذو الحجة 1445هـ
+                    <br>
+                    استعد لتجربة لا تُنسى مع رحلة الحج الفاخرة من شركة ناشيونال إيجيبت. نحن نقدم لك أعلى مستويات
+                    الراحة
+                    والفخامة أثناء أداء مناسك الحج، حيث نضمن لك تجربة سلسة ومميزة تترك ذكريات تدوم للأبد.
+                    يمكنك الاستمتاع بكل لحظة من رحلة الحج بثقة وسلام. اختر رحلة الحج الفاخرة مع شركة ناشيونال إيجيبت
+                    لتجربة دينية مميزة، تمنحك الراحة والفخامة والراحة التي تستحقها أثناء أداء مناسك الحج.
 
-                        حج السنة على خطى الحبيب ﷺ
-                        عندما تجتمع الرفاهية مع العبادة بإحسان
+                    حج السنة على خطى الحبيب ﷺ
+                    عندما تجتمع الرفاهية مع العبادة بإحسان
 
-                    </p>
+                </p>
+            </div>
+
+        </section>
+        <!--?-------------  overview end -->
+
+
+        <section id="afterStepper" style="height: 60px;"></section>
+
+        <!--!-------------  stepper start -->
+        <div class="row justify-content-start container-fluid ps-lg-4">
+            <h5 class="overView-title">تفاصيل الباقة </h5>
+
+            <div class="col-lg-7  timeline-container">
+                <div class="timeline-item ps-4 pt-0">
+                    <div class="timeline-item-content ">
+                        <h6>حج السنة على خطى الحبيب مع ناشيونال ايجيبت للسياحة :</h6>
+                        <p>Arrival at jeddah</p>
+                    </div>
+                    <div class="timeline-details  pt-0">
+                        تلتــزم شركة ناشيـونال إيجيبـت للسيـاحة بالسـنة النبوية الصحيحة فى أداء مناسك الحج من تروية
+                        _لمـن
+                        يرغـب إلي المبيـت بالمزدلفـة إلـي المبيـت بمني ايام التشريق الثلاث إلي الرجم بعد الزوال
+                    </div>
+                    <div class="timeline-line"></div>
                 </div>
 
-            </section>
-            <!--?-------------  overview end -->
-
-
-            <section id="afterStepper" style="height: 60px;"></section>
-
-            <!--!-------------  stepper start -->
-            <div class="row justify-content-start container-fluid ps-lg-4">
-                <h5 class="overView-title">تفاصيل الباقة </h5>
-
-                <div class="col-lg-7  timeline-container">
-                    <div class="timeline-item ps-4 pt-0">
-                        <div class="timeline-item-content ">
-                            <h6>حج السنة على خطى الحبيب مع ناشيونال ايجيبت للسياحة :</h6>
-                            <p>Arrival at jeddah</p>
-                        </div>
-                        <div class="timeline-details  pt-0">
-                            تلتــزم شركة ناشيـونال إيجيبـت للسيـاحة بالسـنة النبوية الصحيحة فى أداء مناسك الحج من تروية
-                            _لمـن
-                            يرغـب إلي المبيـت بالمزدلفـة إلـي المبيـت بمني ايام التشريق الثلاث إلي الرجم بعد الزوال
-                        </div>
-                        <div class="timeline-line"></div>
+                <div class="timeline-item ps-4 pt-0">
+                    <div class="timeline-item-content ">
+                        <h6>افضل فنادق على ساحة الحرمين الشريفين :</h6>
+                        <p>Arrival at Aswan - Aswan (35 Kms / 1 Hrs)</p>
                     </div>
-
-                    <div class="timeline-item ps-4 pt-0">
-                        <div class="timeline-item-content ">
-                            <h6>افضل فنادق على ساحة الحرمين الشريفين :</h6>
-                            <p>Arrival at Aswan - Aswan (35 Kms / 1 Hrs)</p>
-                        </div>
-                        <div class="timeline-details  pt-0">
-                            تتعـاقد شركـة ناشيونـال إيجيبـت للسياحــة مـع أفضــل فنــادق 5 نجــوم علي بلاط الحرم
-                            بالمدينة
-                            المنورة ومكة المكرمة نضمن فيه
-                            اعلي مستوي متاح من الخدمات والرفاهية التي تمكن عملائنا من الإحسان في العبادة
-                        </div>
-                        <div class="timeline-line"></div>
+                    <div class="timeline-details  pt-0">
+                        تتعـاقد شركـة ناشيونـال إيجيبـت للسياحــة مـع أفضــل فنــادق 5 نجــوم علي بلاط الحرم
+                        بالمدينة
+                        المنورة ومكة المكرمة نضمن فيه
+                        اعلي مستوي متاح من الخدمات والرفاهية التي تمكن عملائنا من الإحسان في العبادة
                     </div>
+                    <div class="timeline-line"></div>
+                </div>
 
-                    <div class="timeline-item ps-4 pt-0">
-                        <div class="timeline-item-content ">
-                            <h6>مخيمات فاخرة في منى و عرفة :</h6>
-                            <p>At Temple</p>
-                        </div>
-                        <div class="timeline-details  pt-0">
-                            تحرص شركة ناشيونال إيجيبت للسياحة على راحة عملائها فى عرفـة و منى بتقديـم أفضل المخيمـات لذا
-                            فإنها
-                            تتعاقد مع أفضل برنـامج طوافه بالمملكة مجر الكبـش الفاخـر وايضـا مخيمـات الشركـة الفاخره بمجر
-                            الكبش
-                            بالاضافة الى مخيمات المطوف/ علاء محضر المميزه لبرامج 5 نجوم <br>
-                            مخيمات ناشيونال إيجيبت بعرفات عبارة عن خيام فاخره خمس نجوم مخصصة لعملاء الشركة وهي بإرتفاع 4
-                            متر
-                            مكيفة ومفروشة بالسجاد ومزودة بكراسى خاصة مريحة ومقسمة إلى جزئين أحدهما للنوم والآخر للجلوس
-                            لكلاً
-                            من
-                            خيام السيدات والرجال<br>
-                            توجد أيضاً جلسات خارج الخيام مجهزة بالكراسى والمظلات كما توجد حمامات خاصة بمخيمنا للرجال
-                            وأخرى
-                            للسيدات<br>
-                            خدمات الأغذية والمشروبات تقدم على أعلى مستوى وهى عبارة عن بوفية مفتوح للوجبات والمشروبات
-                            الباردة
-                            والساخنة (افطار - غداء - عشاء)<br>
-                            مخيمات الشركة بمنى مخيمات مستقلة ولها مدخل خاص مقسمة إلى جزئين أحدهما للرجال وأخرى للسيدات
-                            وبها
-                            جلسات كبيرة ومريحة مجهزة بإذاعة داخلية للإستماع إلى الندوات الدينية<br>
-                            يوجد أيضاً بوفية مفتوح مجهز من فنادق خمس نجوم إضافة إلى المشروبات الباردة والساخنة على مدار
-                            الساعه
-                            (افطار - غداء - عشاء)<br>
-                            <span style="font-weight: bold; color: black;">مع نخبة من افضل دعاة الأزهر الشريف :</span>
-
-                            بصحبة أفضل الدعاة (د/شريف شحاته - د/أحمد السيد - الشيخ/ أحمد الصباغ
-                            الشيخ محمد عادل - القارئ/ محمد عاطف - الشيخ/ أسامه محمد
-                            ) <br>
-
-                            محاضرات دينية قبل السفر للتعريف بالمناسك
-                            و محاضرات يومية من صلاة العصر الي صلاة المغرب طوال ايام رحلة الحج
-                            ومحاضرات وخطبة ودعاء يوم عرفه ومحاضرات بايام التشريق الثلاث
-                        </div>
-                        <div class="timeline-line"></div>
+                <div class="timeline-item ps-4 pt-0">
+                    <div class="timeline-item-content ">
+                        <h6>مخيمات فاخرة في منى و عرفة :</h6>
+                        <p>At Temple</p>
                     </div>
+                    <div class="timeline-details  pt-0">
+                        تحرص شركة ناشيونال إيجيبت للسياحة على راحة عملائها فى عرفـة و منى بتقديـم أفضل المخيمـات لذا
+                        فإنها
+                        تتعاقد مع أفضل برنـامج طوافه بالمملكة مجر الكبـش الفاخـر وايضـا مخيمـات الشركـة الفاخره بمجر
+                        الكبش
+                        بالاضافة الى مخيمات المطوف/ علاء محضر المميزه لبرامج 5 نجوم <br>
+                        مخيمات ناشيونال إيجيبت بعرفات عبارة عن خيام فاخره خمس نجوم مخصصة لعملاء الشركة وهي بإرتفاع 4
+                        متر
+                        مكيفة ومفروشة بالسجاد ومزودة بكراسى خاصة مريحة ومقسمة إلى جزئين أحدهما للنوم والآخر للجلوس
+                        لكلاً
+                        من
+                        خيام السيدات والرجال<br>
+                        توجد أيضاً جلسات خارج الخيام مجهزة بالكراسى والمظلات كما توجد حمامات خاصة بمخيمنا للرجال
+                        وأخرى
+                        للسيدات<br>
+                        خدمات الأغذية والمشروبات تقدم على أعلى مستوى وهى عبارة عن بوفية مفتوح للوجبات والمشروبات
+                        الباردة
+                        والساخنة (افطار - غداء - عشاء)<br>
+                        مخيمات الشركة بمنى مخيمات مستقلة ولها مدخل خاص مقسمة إلى جزئين أحدهما للرجال وأخرى للسيدات
+                        وبها
+                        جلسات كبيرة ومريحة مجهزة بإذاعة داخلية للإستماع إلى الندوات الدينية<br>
+                        يوجد أيضاً بوفية مفتوح مجهز من فنادق خمس نجوم إضافة إلى المشروبات الباردة والساخنة على مدار
+                        الساعه
+                        (افطار - غداء - عشاء)<br>
+                        <span style="font-weight: bold; color: black;">مع نخبة من افضل دعاة الأزهر الشريف :</span>
 
-                    <!-- <div class="timeline-item ps-4 pt-0">
+                        بصحبة أفضل الدعاة (د/شريف شحاته - د/أحمد السيد - الشيخ/ أحمد الصباغ
+                        الشيخ محمد عادل - القارئ/ محمد عاطف - الشيخ/ أسامه محمد
+                        ) <br>
+
+                        محاضرات دينية قبل السفر للتعريف بالمناسك
+                        و محاضرات يومية من صلاة العصر الي صلاة المغرب طوال ايام رحلة الحج
+                        ومحاضرات وخطبة ودعاء يوم عرفه ومحاضرات بايام التشريق الثلاث
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+
+                <!-- <div class="timeline-item ps-4 pt-0">
                     <div class="timeline-item-content ">
                         <h4>Day 4</h4>
                         <p>At Nouba</p>
@@ -604,76 +544,76 @@
                         Details about Day 5: Spend the day at the city center shopping and relaxing.
                     </div>
                 </div> -->
-                </div>
             </div>
+        </div>
 
 
-            <!--!------------- stepper end -->
+        <!--!------------- stepper end -->
 
-            <!-- banner start-->
-            <div class="banner colored container-xl p-0 mt-3 w-100" style="background: #e04f6700 url(assets/img/banner2.png) no-repeat center bottom !important;overflow:visible;height: 189px;
+        <!-- banner start-->
+        <div class="banner colored container-xl p-0 mt-3 w-100" style="background: #e04f6700 url(assets/img/banner2.png) no-repeat center bottom !important;overflow:visible;height: 189px;
             box-shadow: none;">
-                <!-- <h4>Discover our Top tours <span>from $34</span></h4> -->
-                <p>
-                    <!-- Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. -->
-                </p>
-                <!-- <a href="single_tour.html" class="btn_1 white">Read more</a> -->
-            </div>
-            <!-- banner end-->
-            <section id="afterComponent1" style="height: 40px;"></section>
+            <!-- <h4>Discover our Top tours <span>from $34</span></h4> -->
+            <p>
+                <!-- Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. -->
+            </p>
+            <!-- <a href="single_tour.html" class="btn_1 white">Read more</a> -->
+        </div>
+        <!-- banner end-->
+        <section id="afterComponent1" style="height: 40px;"></section>
 
-            <hr class="container-xxl my-4">
+        <hr class="container-xxl my-4">
 
-            <h4 class="container-xxl mx-auto mt-3 d-flex flex-column">
-                <!--&------------- components start -->
-                <!--*============== includded start -->
-                <h4 class="overView-title mb-3"> محتويات الباقة </h4>
-                <div class="row col-lg-9">
-                    <div class="col-lg-6 d-flex flex-column">
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
-                            تذكرة الطيران </a>
+        <h4 class="container-xxl mx-auto mt-3 d-flex flex-column">
+            <!--&------------- components start -->
+            <!--*============== includded start -->
+            <h4 class="overView-title mb-3"> محتويات الباقة </h4>
+            <div class="row col-lg-9">
+                <div class="col-lg-6 d-flex flex-column">
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
+                        تذكرة الطيران </a>
 
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
-                            الانتقـال من المدينة لمكة بقطـار الحرمين الفاخر </a>
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
-                            الانتقالات الداخليه بسيارات GMC خاصة لتوفر الراحة الكاملة</a>
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
-                            اتوبيسات حديثة ومكيفة ايام المناسك</a>
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
-                            برنامج ديني وروحاني متكامل مع افضل دعاة الأزهر الشريف</a>
-
-
-
-
-                    </div>
-                    <div class="col-lg-6 d-flex flex-column">
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
-                            صالـة كبـار الـزوار بمطـار القاهـرة </a>
-
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""><i class="bi bi-check-lg ms-1"></i>
-                            الاقامة بالفنادق 10 ايام – 9 ليالي </a>
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
-                            المدينة : شهد المدينة 3 ليالي </a>
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
-                            مكة : سويس المقام 6 ليالي </a>
-
-                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
-                            إفطار – غداء – عشاء </a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
+                        الانتقـال من المدينة لمكة بقطـار الحرمين الفاخر </a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
+                        الانتقالات الداخليه بسيارات GMC خاصة لتوفر الراحة الكاملة</a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
+                        اتوبيسات حديثة ومكيفة ايام المناسك</a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
+                        برنامج ديني وروحاني متكامل مع افضل دعاة الأزهر الشريف</a>
 
 
 
 
-
-
-
-                    </div>
                 </div>
-                <!--*============== includded end -->
+                <div class="col-lg-6 d-flex flex-column">
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
+                        صالـة كبـار الـزوار بمطـار القاهـرة </a>
 
-                <section id="afterComponent2" style="height: 40px;"></section>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""><i class="bi bi-check-lg ms-1"></i>
+                        الاقامة بالفنادق 10 ايام – 9 ليالي </a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
+                        المدينة : شهد المدينة 3 ليالي </a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
+                        مكة : سويس المقام 6 ليالي </a>
 
-                <!--//*============== Excluded start -->
-                <!-- <hr class="container-xxl my-4">
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-check-lg ms-1"></i>
+                        إفطار – غداء – عشاء </a>
+
+
+
+
+
+
+
+                </div>
+            </div>
+            <!--*============== includded end -->
+
+            <section id="afterComponent2" style="height: 40px;"></section>
+
+            <!--//*============== Excluded start -->
+            <!-- <hr class="container-xxl my-4">
                 <h4 class="text-white mb-3" style="color: #ca9f44 !important;"> المستثنى من الباقة </h4>
                 <div class="row col-lg-9">
                     <div class="col-lg-6 d-flex flex-column">
@@ -700,25 +640,25 @@
                         </a>
                     </div>
                 </div> -->
-                <!--*============== Excluded end -->
+            <!--*============== Excluded end -->
 
-                <!--&------------- components end -->
-                <section id="afterMap" style="height: 40px;">
-                </section>
+            <!--&------------- components end -->
+            <section id="afterMap" style="height: 40px;">
+            </section>
 
-                <hr class="container-xxl my-5">
-                <!--?------------map start -->
-                <h4 class="overView-title mb-3"> الموقع </h4>
-                <div class=" mb-2 col-lg-7" style="padding: 3px;">
-                    <iframe class="w-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237684.58518226293!2d40.01136192248606!3d21.436254372098105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2z2YXZg9ipINin2YTZhdmD2LHZhdipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1694043192707!5m2!1sar!2seg"
-                        height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <!-- <hr class="container-xxl my-4"> -->
+            <hr class="container-xxl my-5">
+            <!--?------------map start -->
+            <h4 class="overView-title mb-3"> الموقع </h4>
+            <div class=" mb-2 col-lg-7" style="padding: 3px;">
+                <iframe class="w-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237684.58518226293!2d40.01136192248606!3d21.436254372098105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2z2YXZg9ipINin2YTZhdmD2LHZhdipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1694043192707!5m2!1sar!2seg"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- <hr class="container-xxl my-4"> -->
 
-                <!--?---------map end -->
-                <!-- <section id="afterMap" class="my-1 container-fluid col-lg-7 mx-1" style="">
+            <!--?---------map end -->
+            <!-- <section id="afterMap" class="my-1 container-fluid col-lg-7 mx-1" style="">
                 <div class="" id="overView">
                     <h4 class="overView-title mb-3"> السعر</h4>
                     <p>
@@ -729,9 +669,9 @@
                 </div>
 
             </section> -->
-                <!--?-------------  overview end -->
-                <!--^------------policies start -->
-                <div class="mb-5 mt-4  col-lg-7" style="">
+            <!--?-------------  overview end -->
+            <!--^------------policies start -->
+            <!-- <div class="mb-5 mt-4  col-lg-7" style="">
                     <hr class="container-xxl my-4">
                     <section id="afterPolicies" style="height: 20px;"></section>
                     <div class="mt-5">
@@ -811,8 +751,8 @@
                         </div>
                     </div>
 
-                </div>
-                <!--^---------policies start -->
+                </div> -->
+            <!--^---------policies start -->
     </div>
     </div>
     <!--~========================== main End -->
@@ -898,8 +838,8 @@
                     <h3 class="footer-titles text-center mb-4">اشترك في نشرتنا الاخبارية
                     </h3>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input name="email" class="ps-1 bg-transparent subscribe-input   w-100 py-3   "
-                            type="email" placeholder="البريد الالكتروني">
+                        <input name="email" class="ps-1 bg-transparent subscribe-input   w-100 py-3   " type="email"
+                            placeholder="البريد الالكتروني">
                         <button type="buttn" class="btn subscribe-btn  position-absolute top-0 end-0 "> اشتراك
                             <!-- <i class="bi bi-send-plus  "></i> -->
                         </button>

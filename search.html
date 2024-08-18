@@ -31,39 +31,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <link rel="stylesheet" href="assets/css/icons.css">
-    <link href="assets/css/visit-style2.css" rel="stylesheet">
     <link href="assets/css/filter.css" rel="stylesheet">
     <link href="assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/visit-style2.css" rel="stylesheet">
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <style>
-        .first-sectionInCategory {
-            position: relative;
-            background-image: url(../img/seasons-entertainment-culture.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .first-sectionInCategory::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 0;
-            /* Ensure the overlay is behind the content */
-        }
-
-        .main_title {
-            position: relative;
-            z-index: 1;
-            /* Ensure the text is above the overlay */
-        }
-    </style> -->
-
 
 
 </head>
@@ -91,18 +64,20 @@
                      ناشيونال ايجيبت للسياحة
                         </h5> -->
                 </div>
-                <div class="col-3 smallHotLineCT">
-                    <img class="smallHotLine" src="./assets/img/Vector.png" alt="">
+                <div class="row col-8 small-ho-ct justify-content-end">
+                    <div class="col-5 smallHotLineCT">
+                        <img class="smallHotLine" src="./assets/img/Vector.png" alt="">
+                    </div>
+                    <button class="navbar-toggler col-4" onclick="openNav(); hideSideBarButton();" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
-                <button class="navbar-toggler col-4" onclick="openNav(); hideSideBarButton();" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
-                        </path>
-                    </svg>
-                </button>
                 <div class="collapse  navbar-collapse justify-content-end  col-lg-9" id="navbarCollapse">
                     <ul class="list-unstyled w-100 row  mb-lg-0 align-items-center justify-content-between smallNav">
                         <li class="col-lg-6 px-0  mx-auto " id="searchGroup">
@@ -219,13 +194,13 @@
                                                 <p class="mb-0 basket">السلة</p>
                                             </a>
                                         </li>
-                                        <!-- <li id="wishListt" class="dropdown-item  justify-content-start ">
+                                            <li id="wishListt" class="dropdown-item  justify-content-start ">
                                                  <a href="./wishList.html"
                                                 class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
                                                 <i class="bi bi-heart  px-0 mx-0 py-0"></i>
                                                 <p class="mb-0 fav">قائمة المفضلات</p>
                                             </a>
-                                        </li> -->
+                                        </li>
                                         <li id="profile"
                                             class="dropdown-item  justify-content-start  align-items-center">
                                             <a href="./profile.html"
@@ -304,14 +279,16 @@
             <h3 class="m-1">التصنيفات</h3>
             <i class="bi bi-caret-down"></i>
         </div>
-        <div class="filter close col-3">
+        <div class="filter close  col-3">
             <ul class="nav-links overflow-visible">
                 <li>
-                    <h1 class="filterTitle">التصنيفات</h1>
+                    <h1 class="filterTitle overView-title"> <img class="me-1" src="./assets/img/filter2.svg" width="18"
+                            alt="">التصنيفات </h1>
                 </li>
                 <li>
                     <div class="time w-100  my-3">
-                        <label class="text-dark mb-3" for="city"><i class="bi bi-geo-alt"></i> المدينة</label> <br>
+                        <label class="text-dark mb-3 filter-tit" for="city"><i class="bi bi-geo-alt"></i>
+                            المدينة</label> <br>
                         <input type="checkbox" class="ms-2 mb-4  adv" id="makkah">
                         <label for="makkah"> مكة المكرمة</label>
                         <br>
@@ -340,7 +317,9 @@
                     </div>
                 </li>
                 <li>
-                    <label for="price_range"> نطاق السعر </label>
+                    <label for="price_range filter-tit" style="    font-weight: 600 !important;
+                    font-size: 14px;
+                    color: var(--secondary-text) !important;"> نطاق السعر </label>
                     <div class="w-100 my-3 position-relative">
                         <section class="range-slider container-range" style="direction: ltr !important;">
                             <span class="output outputTwo"></span>
@@ -367,7 +346,8 @@
                 </li>
                 <li>
                     <div class="time w-100  my-3">
-                        <label class="text-dark mb-3" for="activities" style="font-weight: bolder;"> الانشطة</label>
+                        <label class="text-dark mb-3 filter-tit" for="activities" style="font-weight: bolder;">
+                            الانشطة</label>
                         <br>
                         <input type="checkbox" checked class="ms-2 mb-4  adv" id="adventures">
                         <label for="adventures"> مغامرات</label>
@@ -423,30 +403,30 @@
             <div class="row align-items-center px-0 mx-0 container-xxl  gap-0 justify-content-between">
                 <div
                     class="container-xxl col-lg-9   gap-lg-1  mx-0 row justify-content-between py-1 main-search position-relative me-lg-">
-                        <img src="./assets/img/black-cal.png" class="check-cal-in-cat" alt="">
-                        <!-- <i class="bi bi-search position-absolute" style="right: 2%; bottom: 9px; width: fit-content;"></i> -->
+                    <img src="./assets/img/black-cal.png" class="check-cal-in-cat" alt="">
+                    <!-- <i class="bi bi-search position-absolute" style="right: 2%; bottom: 9px; width: fit-content;"></i> -->
                     <input type="text" placeholder="ابحث عن تجارب "
                         class="col-lg-5 col-5 border-0 bg-transparent search-cat-page ps-lg-5 ps-4">
 
-                    <input type="text" name="date"  id="datepicker-in-cat" class="col-lg-3 col-4 datePicker"
+                    <input type="text" name="date" id="datepicker-in-cat" class="col-lg-3 col-4 datePicker"
                         placeholder="حدد تاريخ السفر">
 
-                        <script>
-                            // Initialize Flatpickr
-                            flatpickr("#datepicker-in-cat", {
-                                // Options for Flatpickr
-                                dateFormat: "Y-m-d",
-                                onChange: function(selectedDates, dateStr, instance) {
-                                    handleDateInput(selectedDates, dateStr, instance);
-                                }
-                            });
-                        
-                            // Handle date input changes
-                            function handleDateInput(selectedDates, dateStr, instance) {
-                                console.log("Selected Date:", dateStr);
-                                // Add custom logic to handle the date input
+                    <script>
+                        // Initialize Flatpickr
+                        flatpickr("#datepicker-in-cat", {
+                            // Options for Flatpickr
+                            dateFormat: "Y-m-d",
+                            onChange: function (selectedDates, dateStr, instance) {
+                                handleDateInput(selectedDates, dateStr, instance);
                             }
-                        </script>
+                        });
+
+                        // Handle date input changes
+                        function handleDateInput(selectedDates, dateStr, instance) {
+                            console.log("Selected Date:", dateStr);
+                            // Add custom logic to handle the date input
+                        }
+                    </script>
                     <button
                         class="btn col-lg-3  col-3 border-0 search-button my-0 text-light d-flex align-items-center align-content-center gap-1 justify-content-center">
 
@@ -522,7 +502,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -576,7 +556,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -630,7 +610,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -684,7 +664,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -738,7 +718,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -792,7 +772,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -846,7 +826,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -900,7 +880,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -954,7 +934,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1008,7 +988,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1062,7 +1042,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1116,7 +1096,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1130,11 +1110,10 @@
                     </div>
                     <!-- End col -->
                 </div>
-                <div>
-                    <p class="text-center nopadding m-2">
-                        <a href="#" class="btn_1 medium p-2"
-                            style="background-color: #ca9f44; border: 1px solid  #fff; border-radius: 10px; color: #fff; font-weight: bold; width: 200px; font-size: 20px;">
-                            شاهد جميع التجارب <i class="icon-eye-7"></i></a>
+                <div class="mb-5">
+                    <p class="text-center nopadding mt-3 mb-0">
+                        <a href="category.html" class="showMore medium py-2 px-4">
+                            شاهد المزيد <i class="icon-eye-7"></i></a>
                     </p>
                 </div>
             </div>
@@ -1254,8 +1233,8 @@
                     <h3 class="footer-titles text-center mb-4">اشترك في نشرتنا الاخبارية
                     </h3>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input name="email" class="ps-1 bg-transparent subscribe-input   w-100 py-3   "
-                            type="email" placeholder="البريد الالكتروني">
+                        <input name="email" class="ps-1 bg-transparent subscribe-input   w-100 py-3   " type="email"
+                            placeholder="البريد الالكتروني">
                         <button type="buttn" class="btn subscribe-btn  position-absolute top-0 end-0 "> اشتراك
                             <!-- <i class="bi bi-send-plus  "></i> -->
                         </button>

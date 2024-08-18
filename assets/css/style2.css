@@ -762,6 +762,7 @@ h6,
 .navbar- .navbar-toggler {
     color: var(--primary) !important;
     border-color: var(--primary) !important;
+    width: fit-content;
 }
 
 @media (max-width: 991.98px) {
@@ -841,7 +842,7 @@ h6,
     position: relative;
     border: 1px solid #F2CCA2;
     height: 45px;
-    /* background-color: #ca9f44; */
+    /* background-color: var(--secondary-text); */
 }
 
 .locationSearchIcon {
@@ -938,7 +939,7 @@ h6,
     width: 47px !important;
     border: 0px;
     background: var(--Color, #F2CCA2);
-    /* background: linear-gradient(to right, #ca9f44, rgba(255, 208, 114, 0.618), rgba(255, 250, 241, 0.282)); */
+    /* background: linear-gradient(to right, var(--secondary-text), rgba(255, 208, 114, 0.618), rgba(255, 250, 241, 0.282)); */
 }
 
 .searchIconInNav {
@@ -973,7 +974,7 @@ ul#top_tools a {
 }
 
 ul#top_tools a:hover {
-    color: #ca9f44;
+    color: var(--secondary-text);
 }
 
 .sticky ul#top_tools a {
@@ -1008,7 +1009,7 @@ ul#top_tools2 a {
 }
 
 ul#top_tools2 a:hover {
-    color: #ca9f44;
+    color: var(--secondary-text);
 }
 
 .sticky ul#top_tools2 a {
@@ -1132,7 +1133,7 @@ s ul#top_tools2 li i {
     width: 30px !important;
     border: 0px;
     /* background: #fbc634 */
-    /* background: linear-gradient(to right, #ca9f44, rgba(255, 208, 114, 0.618), rgba(255, 250, 241, 0.282)); */
+    /* background: linear-gradient(to right, var(--secondary-text), rgba(255, 208, 114, 0.618), rgba(255, 250, 241, 0.282)); */
 }
 
 .profileBtn .bi-person-circle {
@@ -1167,6 +1168,10 @@ s ul#top_tools2 li i {
 #transs a {
     color: var(--primary);
     /* pad; */
+}
+
+.bi-search::before {
+    font-weight: bold !important;
 }
 
 @media screen and (max-width: 1170px) and (min-width: 992px) {
@@ -1319,12 +1324,16 @@ s ul#top_tools2 li i {
 
 @media (max-width: 767px) {
     .logo-respo {
-        width: 100%;
+        /* width: 100%; */
     }
 }
 
 @media (max-width: 767px) {
     .logo-respo {
+        width: 100%;
+    }
+
+    .smallHotLine {
         width: 100%;
     }
 }
@@ -1337,6 +1346,7 @@ s ul#top_tools2 li i {
     #sideBarButton {
         display: none !important;
     }
+
 }
 
 /*!================================= Navbar End */
@@ -1567,7 +1577,7 @@ s ul#top_tools2 li i {
     }
 
     .logo-respo {
-        width: 200px;
+        width: 150px;
     }
 }
 
@@ -1668,7 +1678,7 @@ s ul#top_tools2 li i {
 
     .header-video,
     #hero_video {
-        height: 215px !important;
+        height: 80vh !important;
     }
 
     #hero_video {
@@ -1679,9 +1689,9 @@ s ul#top_tools2 li i {
 
     .intro_title p {
         font-family: 'light';
-        font-size: 30px;
-        line-height: normal;
-        width: 70%;
+        font-size: 40px;
+        line-height: 52px;
+        width: 55%;
 
     }
 
@@ -1718,6 +1728,14 @@ s ul#top_tools2 li i {
         left: 0;
         right: 0;
         width: 100%;
+    }
+
+    .video-small {
+        display: none;
+    }
+
+    .small-ho-ct {
+        display: none;
     }
 }
 
@@ -1789,6 +1807,9 @@ s ul#top_tools2 li i {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    font-weight: 500;
+    font-family: 'main';
+
     color: var(--primary-color) !important;
 }
 
@@ -1800,6 +1821,16 @@ s ul#top_tools2 li i {
     color: #000;
 }
 
+.nav-pills .nav-link {
+    height: 80px;
+    font-family: 'main';
+
+    display: flex;
+    font-weight: 500;
+    /* position: absolute; */
+    align-items: center;
+}
+
 @media(max-width:767px) {
     .mainCategory {
         width: 30px;
@@ -1807,13 +1838,20 @@ s ul#top_tools2 li i {
 
     .nav-pills .nav-link {
         height: 80px;
-        font-size: 10px !important;
+        font-family: 'light';
+        font-size: 13px !important;
         padding-left: 5px !important;
         padding-right: 5px !important;
         display: flex;
+        font-weight: 300;
         /* position: absolute; */
         flex-direction: column !important;
         align-items: center;
+    }
+
+    .nav-pills .nav-link.active {
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
     }
 
     .RL-Line {
@@ -2106,7 +2144,7 @@ s ul#top_tools2 li i {
 .wish-btn:active {
     background-color: #fff;
     color: var(--primary) !important;
-    border: 1px solid #ca9f44;
+    border: 1px solid var(--secondary-text);
     border-radius: 10px;
 
 
@@ -2115,7 +2153,7 @@ s ul#top_tools2 li i {
 .wish-btn:hover {
     /* background-color: #34ad5400;
     color: var(--primary) !important;
-    border: 1px solid #ca9f44;
+    border: 1px solid var(--secondary-text);
     box-shadow: inset 0 0 0 0 var(--primary);
     border-radius: 10px; */
 }
@@ -2280,7 +2318,7 @@ s ul#top_tools2 li i {
     border-radius: 50%;
     border: 2px solid #f0f0f0;
     font-size: 62px;
-    color: #ca9f44;
+    color: var(--secondary-text);
 }
 
 [class^="icon_set_1_"]:before,
@@ -2309,7 +2347,7 @@ a.btn_1,
     font-family: inherit;
     font-size: inherit;
     color: #fff;
-    background: #ca9f44;
+    background: var(--secondary-text);
     cursor: pointer;
     padding: 7px 20px;
     display: inline-block;
@@ -2329,7 +2367,7 @@ a.btn_1,
     font-family: inherit;
     font-size: inherit;
     color: #fff;
-    background: #ca9f44;
+    background: var(--secondary-text);
     cursor: pointer;
     padding: 7px 20px;
     display: inline-block;
@@ -2419,7 +2457,7 @@ a.btn_1,
     font-size: 32px;
     margin: 0;
     padding: 0;
-    color: #ca9f44;
+    color: var(--secondary-text);
     font-family: "Gochi Hand", cursive;
 }
 
@@ -2434,7 +2472,7 @@ a.btn_1,
 }
 
 .banner.colored {
-    background: #ca9f4400 url(../img/banner1\ \(1\).png) no-repeat center bottom;
+    background: var(--secondary-text)00 url(../img/banner1\ \(1\).png) no-repeat center bottom;
     color: #fff;
     height: 150px;
 
@@ -2617,9 +2655,9 @@ a.btn_1,
 
 .enjoy-more {
     font-family: 'light';
-    border: 1px solid #CA9F44;
-    font-weight: 400;
-    color: #ca9f44;
+    border: 1px solid var(--secondary-text);
+    font-weight: 600;
+    color: var(--secondary-text);
     width: 160px;
     border-radius: 10px;
 }
@@ -3020,7 +3058,7 @@ ul.list_order li {
 }
 
 ul.list_order li span {
-    background-color: #ca9f44;
+    background-color: var(--secondary-text);
     color: #fff;
     position: absolute;
     right: 0;

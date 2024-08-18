@@ -33,81 +33,8 @@
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .bg-uram-colr {
-            background-color: #111f46 !important;
-        }
-
-        .statics-border-left {
-            border-bottom-left-radius: 15px;
-            border-top-left-radius: 15px;
-        }
-
-        .statics-border-right {
-            border-bottom-right-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-
-        .rounded {
-            border-radius: 10px !important;
-        }
-
-        @media(max-width:767px) {
-            .navbar {
-                background-color: black;
-            }
-
-            .logo-size-small {
-                width: 160px;
-            }
-
-            .img-about-us-siz-sml {
-                display: none;
-            }
-
-            .bg-logo-des-footer {
-                width: 92%;
-            }
-
-            #about-img {
-                min-height: 0px !important;
-            }
-
-            #statics-card {
-                display: flex;
-                gap: 10px;
-            }
-        }
-
-        @media(max-width:992px) {
-            .navbar {
-                background-color: black;
-            }
-        }
-
-        .nav-item {
-            font-size: 17px !important;
-        }
-
-        .btn-form {
-            background-color: #2496d4;
-            color: white;
-        }
-
-        .h4-text-dark {
-            color: white !important;
-        }
-
-        @media(max-width:767px) {
-            #header-carousel {
-                height: 400px;
-            }
-
-            .carousel-item img {
-                height: 400px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
 <body>
@@ -118,31 +45,33 @@
         <div class="spinner"></div>
     </div>
     <!-- Spinner End -->
-
+    <!--!--------------- Navbar Start -->
     <div class="container-fluid position-relative p-0 nav-ct">
         <nav
-            class="navbar navbar-expand-lg navbar- px- mt-0 container-fluid mx-auto py-lg-1 d-flex align-items-center justify-content-around sticky-top shadow-sm">
+            class="navbar navbar-expand-lg navbar- px- mt-0 container-fluid mx-auto py-lg-1  d-flex align-items-center justify-content-around">
             <div class="container-xxl row py-2">
                 <div class="d-flex flex-row align-items-center col-4 col-lg-3">
                     <a href="index.html"><img class="ms-0 logo-respo" src="assets/img/favIcon.png" alt=""
-                            style="margin-left: 10px;">
+                            style="margin-left: 10px;" class="logo1">
                     </a>
                     <!-- <h5 class="my-0 text-white text-start"> 
-                     ناشيونال ايجيبت للسياحة
-                        </h5> -->
+                 ناشيونال ايجيبت للسياحة
+                    </h5> -->
                 </div>
-                <div class="col-3 smallHotLineCT">
-                    <img class="smallHotLine" src="./assets/img/Vector.png" alt="">
+                <div class="row col-8 small-ho-ct justify-content-end">
+                    <div class="col-5 smallHotLineCT">
+                        <img class="smallHotLine" src="./assets/img/Vector.png" alt="">
+                    </div>
+                    <button class="navbar-toggler col-4" onclick="openNav(); hideSideBarButton();" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
-                <button class="navbar-toggler col-4" onclick="openNav(); hideSideBarButton();" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
-                        </path>
-                    </svg>
-                </button>
                 <div class="collapse  navbar-collapse justify-content-end  col-lg-9" id="navbarCollapse">
                     <ul class="list-unstyled w-100 row  mb-lg-0 align-items-center justify-content-between smallNav">
                         <li class="col-lg-6 px-0  mx-auto " id="searchGroup">
@@ -153,9 +82,8 @@
                                 <div class="col-4 whenButtonCT d-flex ">
                                     <img class="dateImg" src="./assets/img/date.svg" alt="">
 
-                                    <input type="text" name="date" class="whenButton pe-2 flatpickr-input"
-                                        id="datepicker" placeholder="حدد تاريخ السفر" oninput="handleDateInput()"
-                                        readonly="readonly">
+                                    <input type="text" name="date" class=" whenButton pe-2" id="datepicker"
+                                        placeholder="حدد تاريخ السفر" oninput="handleDateInput()">
                                 </div>
                                 <script>
                                     flatpickr("#datepicker", {
@@ -249,10 +177,10 @@
 
                                     <ul class="dropdown-menu  prof-dd">
                                         <!-- <li class="dropdown-item   justify-content-start" id="">
-                                            <a href="check-out.html" data-bs-toggle="dropdown"
-                                                class="cart_bt search-overlay-menu-btn  d-flex justify-content-start gap-lg-3">
-                                            </a>
-                                        </li> -->
+                                        <a href="check-out.html" data-bs-toggle="dropdown"
+                                            class="cart_bt search-overlay-menu-btn  d-flex justify-content-start gap-lg-3">
+                                        </a>
+                                    </li> -->
                                         <li id="cartt" class="dropdown-item  justify-content-start ">
                                             <a href="./cart.html" target="_blank"
                                                 class="search-overlay-menu-btn text-black-lg-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
@@ -260,13 +188,13 @@
                                                 <p class="mb-0 basket">السلة</p>
                                             </a>
                                         </li>
-                                        <!-- <li id="wishListt" class="dropdown-item  justify-content-start ">
-                                                 <a href="./wishList.html"
-                                                class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
-                                                <i class="bi bi-heart  px-0 mx-0 py-0"></i>
-                                                <p class="mb-0 fav">قائمة المفضلات</p>
-                                            </a>
-                                        </li> -->
+                                        <li id="wishListt" class="dropdown-item  justify-content-start ">
+                                             <a href="./wishList.html"
+                                            class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                            <i class="bi bi-heart  px-0 mx-0 py-0"></i>
+                                            <p class="mb-0 fav">قائمة المفضلات</p>
+                                        </a>
+                                    </li>
                                         <li id="profile"
                                             class="dropdown-item  justify-content-start  align-items-center">
                                             <a href="./profile.html"
@@ -307,9 +235,13 @@
             </div>
         </nav>
     </div>
+    <!-- Navbar End -->
+    <!--!--------------- Navbar End -->
+
+
     <!--&--------------- Carousel Start -->
     <div id="header-carousel" class="carousel carousel-fade" data-bs-ride="carousel" style="top: -107px;">
-        <div class="carousel-inner">
+        <div class="carousel-inner carousel-inner-visit">
             <section class="header-video w-100" style=" height: 570.29px; position: relative;">
                 <div id="hero_video">
                     <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)"
@@ -323,13 +255,26 @@
                 </div>
                 <!-- /search_bar-->
 
+
                 <img src="assets/img/video_fi.png" alt="Image" class="header-video--media" data-video-src=""
-                    data-teaser-source="video/hero1" data-provider="" data-video-width="854" data-video-height="400">
+                    data-teaser-source="video/hero1" data-provider="" data-video-width="854" data-video-height="480">
                 <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video">
                     <source src="assets/img/hero1.mp4" type="video/mp4">
                     <source src="assets/img/hero1.mp4" type="video/ogg">
                 </video>
-
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video">
+                    <source src="video/hero1.mp4" type="video/mp4">
+                    <source src="video/hero1.ogv" type="video/ogg">
+                </video>
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video video-small">
+                    <source src="assets/img/hero2.mp4" type="video/mp4">
+                    <source src="assets/img/hero2.mp4" type="video/ogg">
+                </video>
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video video-small">
+                    <source src="video/hero2.mp4" type="video/mp4">
+                    <source src="video/hero2.ogv" type="video/ogg">
+                </video>
+                <!-- /*===============================Video End*/ -->
 
 
 
@@ -438,7 +383,7 @@
 
 
     <!--?----------Description Start -->
-    <div class="container-xxl main_title_ct">
+    <div class="container-xxl main_title_ct " style="margin-top: -68px;">
         <div class="main_title text-center  my-3">
             <p>الرئيسيه/اكتشف السعودية</p>
         </div>
@@ -482,7 +427,7 @@
                         <div class="tour_container" style="height: fit-content">
                             <!-- <div class="ribbon_3 popular"><span>الاكثر رواجاً</span></div> -->
                             <div class="img_container">
-                                <a href="package.html">
+                                <a href="cityDetails.html">
                                     <img src="assets/img/season.jpg" width="800" height="533" class="img-fluid"
                                         alt="Image">
                                     <div class="short_info">
@@ -524,7 +469,7 @@
                         <div class="tour_container" style="height: fit-content">
                             <!-- <div class="ribbon_3 popular"><span>الاكثر رواجاً</span></div> -->
                             <div class="img_container">
-                                <a href="package.html">
+                                <a href="cityDetails.html">
                                     <img src="assets/img/season.jpg" width="800" height="533" class="img-fluid"
                                         alt="Image">
                                     <div class="short_info">
@@ -566,7 +511,7 @@
                         <div class="tour_container" style="height: fit-content">
                             <!-- <div class="ribbon_3 popular"><span>الاكثر رواجاً</span></div> -->
                             <div class="img_container">
-                                <a href="package.html">
+                                <a href="cityDetails.html">
                                     <img src="assets/img/season.jpg" width="800" height="533" class="img-fluid"
                                         alt="Image">
                                     <div class="short_info">
@@ -608,7 +553,7 @@
                         <div class="tour_container" style="height: fit-content">
                             <!-- <div class="ribbon_3 popular"><span>الاكثر رواجاً</span></div> -->
                             <div class="img_container">
-                                <a href="package.html">
+                                <a href="cityDetails.html">
                                     <img src="assets/img/season.jpg" width="800" height="533" class="img-fluid"
                                         alt="Image">
                                     <div class="short_info">
@@ -666,7 +611,7 @@
                         <div class="tour_container" style="height: fit-content">
                             <!-- <div class="ribbon_3 popular"><span>الاكثر رواجاً</span></div> -->
                             <div class="img_container">
-                                <a href="package.html">
+                                <a href="placesDetails.html">
                                     <img src="assets/img/season.jpg" width="800" height="533" class="img-fluid"
                                         alt="Image">
                                     <div class="short_info">
@@ -689,7 +634,7 @@
                                 </h2>
                                 <p>أكبر الفعاليات الترفيهية الشتوية بالعالم! #موسم_الرياض بنسخته
                                 </p>
-                         
+
                                 <!-- end rating -->
                                 <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
                                     <i class="bi bi-heart"></i>
@@ -708,7 +653,7 @@
                         <div class="tour_container" style="height: fit-content">
                             <!-- <div class="ribbon_3 popular"><span>الاكثر رواجاً</span></div> -->
                             <div class="img_container">
-                                <a href="package.html">
+                                <a href="placesDetails.html">
                                     <img src="assets/img/season.jpg" width="800" height="533" class="img-fluid"
                                         alt="Image">
                                     <div class="short_info">
@@ -731,7 +676,7 @@
                                 </h2>
                                 <p>أكبر الفعاليات الترفيهية الشتوية بالعالم! #موسم_الرياض بنسخته
                                 </p>
-                         
+
                                 <!-- end rating -->
                                 <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
                                     <i class="bi bi-heart"></i>
@@ -750,7 +695,7 @@
                         <div class="tour_container" style="height: fit-content">
                             <!-- <div class="ribbon_3 popular"><span>الاكثر رواجاً</span></div> -->
                             <div class="img_container">
-                                <a href="package.html">
+                                <a href="placesDetails.html">
                                     <img src="assets/img/season.jpg" width="800" height="533" class="img-fluid"
                                         alt="Image">
                                     <div class="short_info">
@@ -773,7 +718,7 @@
                                 </h2>
                                 <p>أكبر الفعاليات الترفيهية الشتوية بالعالم! #موسم_الرياض بنسخته
                                 </p>
-                         
+
                                 <!-- end rating -->
                                 <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
                                     <i class="bi bi-heart"></i>
@@ -792,7 +737,7 @@
                         <div class="tour_container" style="height: fit-content">
                             <!-- <div class="ribbon_3 popular"><span>الاكثر رواجاً</span></div> -->
                             <div class="img_container">
-                                <a href="package.html">
+                                <a href="placesDetails.html">
                                     <img src="assets/img/season.jpg" width="800" height="533" class="img-fluid"
                                         alt="Image">
                                     <div class="short_info">
@@ -815,7 +760,7 @@
                                 </h2>
                                 <p>أكبر الفعاليات الترفيهية الشتوية بالعالم! #موسم_الرياض بنسخته
                                 </p>
-                         
+
                                 <!-- end rating -->
                                 <button type="button" class="wishlist wish-btn" fdprocessedid="94yufe">
                                     <i class="bi bi-heart"></i>
@@ -885,7 +830,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -939,7 +884,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -993,7 +938,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1047,7 +992,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1117,7 +1062,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1171,7 +1116,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1225,7 +1170,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1279,7 +1224,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1401,10 +1346,14 @@
                 </li>
 
             </ul>
-            <a href="./category.html" class="design-btn"> استكشف الآن</a>
-
+            <div class="row justify-content-center mt-3">
+                <a class="btn py-2 px-4  mt-2 enjoy-more" href="category.html">
+                    استكشف
+                    المزيد </a>
+            </div>
         </div>
     </div>
+
     <!--todo----------- icon-cards End -->
 
     <!--~------------------------Survey Start -->
@@ -1412,113 +1361,137 @@
     <div
         class="container-xxl mx-auto my-5  text-center p-2 mx-2 d-flex justify-content-center like-container align-items-center">
         <p class="mb-0">هل كانت هذه الصفحه مفيده لك؟</p>
-        <i class="bi bi-hand-thumbs-up text-primary" style="font-size: 20px;"></i>
-        <i class="bi bi-hand-thumbs-down text-primary" style="font-size: 20px;"></i>
+        <i class="bi bi-hand-thumbs-up " style="font-size: 20px;"></i>
+        <i class="bi bi-hand-thumbs-down " style="font-size: 20px;"></i>
     </div>
     <!--~------------------------Survey End -->
 
     <!--!---------------- FAQ start -->
-    <div class="container-xxl my-5">
-        <div>
-            <h3>ما هو أفضل وقت في السنة لزيارة المملكة العربية السعودية؟
-            </h3>
-            <p>كلّ الأوقات مناسبة لزيارة المملكة العربية السعودية نظرًا لتمتعها بمناخ متنوّع وفعاليات ثقافية مختلفة
-                ومأكولات متنوّعة. إذا فالسؤال الصحيح هو أي الأوقات تناسبك لزيارة السعودية؟ تفقّد هذه اللمحة العامة التي
-                تسلط الضوء على بعض الأمور الرائعة التي يمكنكم مشاهدتها وسماعها والتمتع براحتها وطعمها كلّ شهر حتى
-                تتمكنوا من تحديد
+    <div class="container-xxl my-5 mx-auto row">
+        <div class="col-lg-6">
+            <details>
+                <summary class="py-2 px-3 d-flex justify-content-between pe-lg5 gap-4 ">ما هو أفضل وقت في السنة لزيارة
+                    المملكة العربية السعودية؟
+                    <img src="./assets/img/arrow-down.svg" alt="">
+                </summary>
+                <p class="mt-3 px-3 ">كلّ الأوقات مناسبة لزيارة المملكة العربية السعودية نظرًا لتمتعها بمناخ متنوّع
+                    وفعاليات
+                    ثقافية مختلفة
+                    ومأكولات متنوّعة. إذا فالسؤال الصحيح هو أي الأوقات تناسبك لزيارة السعودية؟ تفقّد هذه اللمحة العامة
+                    التي
+                    تسلط الضوء على بعض الأمور الرائعة التي يمكنكم مشاهدتها وسماعها والتمتع براحتها وطعمها كلّ شهر حتى
+                    تتمكنوا من تحديد
 
-            </p>
+                </p>
+            </details>
+
+            <details class="my-2">
+                <summary class="py-2 px-3  d-flex justify-content-between ">
+                    ما هو متوسط درجات الحرارة في المملكة العربية السعودية؟
+                    <img src="./assets/img/arrow-down.svg" alt="">
+
+                </summary>
+                <p class="mt-3 px-3 ">
+                    تتمتع المملكة العربية السعودية بمناخ صحراوي الأمر الذي يعني ارتفاع درجات الحرارة صيفًا في جميع أنحاء
+                    البلاد (ملحوظة: متوسط درجة حرارة فوق أربعين درجة مئوية لعدّة أشهر على التوالي). أما الاستثناء البارز
+                    في
+                    هذا الصدد فهو الجزء الجنوبي الغربي من البلاد الذي يتميز بمناخ شبه جاف.
+                </p>
+                <p class="mt-3 px-3 ">
+                    أما شتاءً تكون درجات الحرارة معتدلة ويميل الطقس للبرودة ليلًا وينخفض أحيانًا إلى ما دون الصفر. وعلى
+                    الرغم من اختلاف المناخ حسب المنطقة والوقت من العام، فمن الممكن أن تتراوح درجات الحرارة من 9.4 درجات
+                    مئوية إلى 43.3 درجة مئوية ونادرًا ما تكون تحت الخمس درجات مئوية وفوق الـ45 درجة مئوية.
+                </p>
+                <p class="mt-3 px-3 ">
+                    تُساهم قلة الأمطار في درجات الحرارة العالية، فمتوسط هطول الأمطار السنوي في معظم مناطق الدولة أقل من
+                    150
+                    ملم طوال السنة.
+
+
+                </p>
+            </details>
+            <details class="my-2">
+                <summary class="py-2 px-3  d-flex justify-content-between ">
+                    ماهي أكثر المدن ارتفاعًا في درجات الحرارة في المملكة العربية السعودية؟
+                    <img src="./assets/img/arrow-down.svg" alt="">
+
+                </summary>
+                <p class="mt-3 px-3 ">
+                    تُعرف مكة المكرمة كونها أقدس مدينة في الإسلام، وهي أيضًا أكثر المدن ارتفاعاً في درجات الحرارة في
+                    المملكة
+                    العربية السعودية، إذ قد تصل درجات الحرارة صيفًا إلى أكثر من 48 درجة مئوية.
+
+
+                </p>
+
+            </details>
+            <details class="my-2">
+                <summary class="py-2 px-3  d-flex justify-content-between ">
+                    متى تهطل الأمطار في المملكة العربية السعودية؟
+                    <img src="./assets/img/arrow-down.svg" alt="">
+
+                </summary>
+                <p class="mt-3 px-3 ">
+                    يُعد هطول الأمطار أمرًا نادرًا في المملكة العربية السعودية نظرًا لتمتعها بمناخ صحراوي وغالبًا ما
+                    تهطل
+                    الأمطار في الفترة من نوفمبر وحتى أبريل.
+
+
+                </p>
+
+            </details>
         </div>
+        <div class="col-lg-6">
+            <details class="my-2">
+                <summary class="py-2 px-3 px-1 d-flex justify-content-between ">
+                    ما هو أنسب وقت للسفر وزيارة الشواطئ السعودية؟
+                    <img src="./assets/img/arrow-down.svg" alt="">
 
-        <div class="my-5">
-            <h3>
-                ما هو متوسط درجات الحرارة في المملكة العربية السعودية؟
+                </summary>
+                <p class="mt-3 px-3 ">
+                    يعتبر الكثيرون شهر نوفمبر أفضل شهر للسباحة والتشمس تحت أشعة الشمس في الخليج العربي على طول الساحل
+                    الشرقي. أما على طول البحر الأحمر من جنوب جدة على طول الساحل الغربي فيمكن الاستمتاع بهذه الأنشطة طوال
+                    العام بسبب دفء الأجواء حتى في الشتاء.
+                </p>
 
-            </h3>
-            <p>
-                تتمتع المملكة العربية السعودية بمناخ صحراوي الأمر الذي يعني ارتفاع درجات الحرارة صيفًا في جميع أنحاء
-                البلاد (ملحوظة: متوسط درجة حرارة فوق أربعين درجة مئوية لعدّة أشهر على التوالي). أما الاستثناء البارز في
-                هذا الصدد فهو الجزء الجنوبي الغربي من البلاد الذي يتميز بمناخ شبه جاف.
-            </p>
-            <p>
-                أما شتاءً تكون درجات الحرارة معتدلة ويميل الطقس للبرودة ليلًا وينخفض أحيانًا إلى ما دون الصفر. وعلى
-                الرغم من اختلاف المناخ حسب المنطقة والوقت من العام، فمن الممكن أن تتراوح درجات الحرارة من 9.4 درجات
-                مئوية إلى 43.3 درجة مئوية ونادرًا ما تكون تحت الخمس درجات مئوية وفوق الـ45 درجة مئوية.
-            </p>
-            <p>
-                تُساهم قلة الأمطار في درجات الحرارة العالية، فمتوسط هطول الأمطار السنوي في معظم مناطق الدولة أقل من 150
-                ملم طوال السنة.
+            </details>
+            <details class="my-2">
+                <summary class="py-2 px-3  d-flex justify-content-between ">
+                    كيف تجهز حقيبتك لقضاء الشتاء في السعودية؟
+                    <img src="./assets/img/arrow-down.svg" alt="">
 
-
-            </p>
-        </div>
-        <div class="my-5">
-            <h3>
-                ماهي أكثر المدن ارتفاعًا في درجات الحرارة في المملكة العربية السعودية؟
-
-            </h3>
-            <p>
-                تُعرف مكة المكرمة كونها أقدس مدينة في الإسلام، وهي أيضًا أكثر المدن ارتفاعاً في درجات الحرارة في المملكة
-                العربية السعودية، إذ قد تصل درجات الحرارة صيفًا إلى أكثر من 48 درجة مئوية.
+                </summary>
+                <p class="mt-3 px-3 ">
+                    إن كُنت تنوي قضاء الشتاء في الوجهات السياحية الشمالية مثل تبوك، فاحضر ملابس دافئة مثل معطف وقبعة
+                    ووشاح
+                    وقفازات، وضع في الحسبان احضار معطف للمطر أو مظلة. أما إن كنت تنوي قضاء إجازتك على طول الخليج العربي،
+                    فلن
+                    تحتاج إلا للملابس الخفيفة نهارًا والدافئة مساءً. بالنسبة لساحل البحر الأحمر شمال جدة، احضر ملابس
+                    خفيفة
+                    للنهار ودافئة للمساء، أما جنوبًا على امتداد الساحل فكل ما تحتاجه هو وشاح للنسيم وربما كنزة مساءً.
 
 
-            </p>
+                </p>
 
-        </div>
-        <div class="my-5">
-            <h3>
-                متى تهطل الأمطار في المملكة العربية السعودية؟
+            </details>
+            <details class="my-2">
+                <summary class="py-2 px-3  d-flex justify-content-between ">
+                    كيف تجهز حقيبتك لقضاء الصيف بالسعودية؟
+                    <img src="./assets/img/arrow-down.svg" alt="">
 
-            </h3>
-            <p>
-                يُعد هطول الأمطار أمرًا نادرًا في المملكة العربية السعودية نظرًا لتمتعها بمناخ صحراوي وغالبًا ما تهطل
-                الأمطار في الفترة من نوفمبر وحتى أبريل.
-
-
-            </p>
-
-        </div>
-        <div>
-            <h3>
-                ما هو أنسب وقت للسفر وزيارة الشواطئ السعودية؟
-
-            </h3>
-            <p>
-                يعتبر الكثيرون شهر نوفمبر أفضل شهر للسباحة والتشمس تحت أشعة الشمس في الخليج العربي على طول الساحل
-                الشرقي. أما على طول البحر الأحمر من جنوب جدة على طول الساحل الغربي فيمكن الاستمتاع بهذه الأنشطة طوال
-                العام بسبب دفء الأجواء حتى في الشتاء.
-            </p>
-
-        </div>
-        <div class="my-5">
-            <h3>
-                كيف تجهز حقيبتك لقضاء الشتاء في السعودية؟
-
-            </h3>
-            <p>
-                إن كُنت تنوي قضاء الشتاء في الوجهات السياحية الشمالية مثل تبوك، فاحضر ملابس دافئة مثل معطف وقبعة ووشاح
-                وقفازات، وضع في الحسبان احضار معطف للمطر أو مظلة. أما إن كنت تنوي قضاء إجازتك على طول الخليج العربي، فلن
-                تحتاج إلا للملابس الخفيفة نهارًا والدافئة مساءً. بالنسبة لساحل البحر الأحمر شمال جدة، احضر ملابس خفيفة
-                للنهار ودافئة للمساء، أما جنوبًا على امتداد الساحل فكل ما تحتاجه هو وشاح للنسيم وربما كنزة مساءً.
+                </summary>
+                <p class="mt-3 px-3 ">
+                    لقضاء الصيف بمكة المكرمة والرياض وسواحل الخليج العربي والبحر الأحمر احضر ملابس خفيفة تكون طويلة
+                    ومصنوعة
+                    من النسيج الطبيعي مثل القطن او الحرير بالإضافة إلى كنزة ووشاح للمناطق المكيفة. للجبال في المنطقة
+                    الغربية
+                    احضر ملابس خفيفة للنهار وقبعة شمسية أو عمامة وكنزة او سترة للمساء إضافة إلى أحذية التسلق. واضف معطف
+                    للمطر أو مظلة حين تكون وجهتك جنوبًا في الجبال.
 
 
-            </p>
+                </p>
 
-        </div>
-        <div class="my-5">
-            <h3>
-                كيف تجهز حقيبتك لقضاء الصيف بالسعودية؟
-
-            </h3>
-            <p>
-                لقضاء الصيف بمكة المكرمة والرياض وسواحل الخليج العربي والبحر الأحمر احضر ملابس خفيفة تكون طويلة ومصنوعة
-                من النسيج الطبيعي مثل القطن او الحرير بالإضافة إلى كنزة ووشاح للمناطق المكيفة. للجبال في المنطقة الغربية
-                احضر ملابس خفيفة للنهار وقبعة شمسية أو عمامة وكنزة او سترة للمساء إضافة إلى أحذية التسلق. واضف معطف
-                للمطر أو مظلة حين تكون وجهتك جنوبًا في الجبال.
-
-
-            </p>
-
+            </details>
         </div>
 
     </div>
@@ -1554,111 +1527,111 @@
     <!-- small banners Start -->
 
 
-   <!--//-------------- Footer Start -->
-   <footer class="footer  py-3">
+    <!--//-------------- Footer Start -->
+    <footer class="footer  py-3">
 
-    <div class="footerCt ">
-        <div
-            class="d-flex gap-lg-0 gap-3 flex-lg-row flex-column w-100 container-xxl mx-auto px-0    align-items-center justify-content-between">
-            <img src="./assets/img/favIcon.png" alt="">
-            <div class="social-media sm-center gap-2 d-flex align-items-center">
+        <div class="footerCt ">
+            <div
+                class="d-flex gap-lg-0 gap-3 flex-lg-row flex-column w-100 container-xxl mx-auto px-0    align-items-center justify-content-between">
+                <img src="./assets/img/favIcon.png" alt="">
+                <div class="social-media sm-center gap-2 d-flex align-items-center">
 
-                <a href="https://www.instagram.com/national_egypt" target="_blank"><img src="./assets/img/insta.png"
-                        alt=""></a>
-                <a href="https://www.youtube.com/@user-gy3gu2mb9l" target="_blank"><img
-                        src="./assets/img/youtube.png" alt=""></a>
-                <a href="https://www.facebook.com/NationalEgyptTours?locale=ar_AR" target="_blank"><img
-                        src="./assets/img/face.png" width="30" alt=""></a>
-                <a href="https://www.instagram.com/national_egypt" target="_blank"><img src="./assets/img/x.png"
-                        alt=""></a>
-                <a href="tel:17115" class="ms-2">
-                    <img src="./assets/img/hot.png" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="line  container-xxl mt-3">
-        </div>
-        <div class="container-xxl px-0 mx-auto row justify-content-between my-5">
-            <div class="footer-section ps-lg-0 col-lg-4 location ">
-                <h3 class="footer-titles"><img
-                        src="https://register.nationalegypt.com/public/assets/assets/img/Rectangle 13.png" alt="">
-                    الروابط الاكثر تصفحاً
-                </h3>
-                <div class="d-lg-flex justify-content-lg-start">
-                    <div class="d-flex flex-column">
-                        <a class="btn btn-link footerLinks ftr ftr" href="visit-saudi.html">
-                            اكتشف السعودية
-                        </a>
-                        <a class="btn btn-link footerLinks ftr" href="./events.html"> فعاليات و مواسم
-                        </a>
-                    </div>
-                    <div class="d-flex flex-column">
-                        <a class="btn btn-link footerLinks ftr" href="">
-                            نشاطات يمكنك القيام بها
-                        </a>
-                        <a class="btn btn-link footerLinks ftr" href="./supplierLogIn.html">
-                            التسجيل كمزود خدمة
-                        </a>
-                    </div>
+                    <a href="https://www.instagram.com/national_egypt" target="_blank"><img src="./assets/img/insta.png"
+                            alt=""></a>
+                    <a href="https://www.youtube.com/@user-gy3gu2mb9l" target="_blank"><img
+                            src="./assets/img/youtube.png" alt=""></a>
+                    <a href="https://www.facebook.com/NationalEgyptTours?locale=ar_AR" target="_blank"><img
+                            src="./assets/img/face.png" width="30" alt=""></a>
+                    <a href="https://www.instagram.com/national_egypt" target="_blank"><img src="./assets/img/x.png"
+                            alt=""></a>
+                    <a href="tel:17115" class="ms-2">
+                        <img src="./assets/img/hot.png" alt="">
+                    </a>
                 </div>
             </div>
-            <div class=" ps-lg-0 col-lg-4 w-fit row justify-content-center ">
-                <div class="footer-section location">
+            <div class="line  container-xxl mt-3">
+            </div>
+            <div class="container-xxl px-0 mx-auto row justify-content-between my-5">
+                <div class="footer-section ps-lg-0 col-lg-4 location ">
                     <h3 class="footer-titles"><img
-                            src="https://register.nationalegypt.com/public/assets/assets/img/Rectangle 13.png"
-                            alt="">
-                        معلومات مفيدة </h3>
+                            src="https://register.nationalegypt.com/public/assets/assets/img/Rectangle 13.png" alt="">
+                        الروابط الاكثر تصفحاً
+                    </h3>
                     <div class="d-lg-flex justify-content-lg-start">
                         <div class="d-flex flex-column">
-                            <a class="btn btn-link footerLinks ftr" href="visit-saudi.html">
-                                أسئلة متكررة
+                            <a class="btn btn-link footerLinks ftr ftr" href="visit-saudi.html">
+                                اكتشف السعودية
                             </a>
-                            <a class="btn btn-link footerLinks ftr" href="">
-                                اتصل بنا
+                            <a class="btn btn-link footerLinks ftr" href="./events.html"> فعاليات و مواسم
                             </a>
                         </div>
                         <div class="d-flex flex-column">
                             <a class="btn btn-link footerLinks ftr" href="">
-
-                                من نحن
+                                نشاطات يمكنك القيام بها
                             </a>
                             <a class="btn btn-link footerLinks ftr" href="./supplierLogIn.html">
-
                                 التسجيل كمزود خدمة
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="line  container-xxl my-4 location2">
-            </div>
-            <div class="footer-section ps-lg-0 col-lg-4 location ">
-                <h3 class="footer-titles text-center mb-4">اشترك في نشرتنا الاخبارية
-                </h3>
-                <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input name="email" class="ps-1 bg-transparent subscribe-input   w-100 py-3   "
-                        type="email" placeholder="البريد الالكتروني">
-                    <button type="buttn" class="btn subscribe-btn  position-absolute top-0 end-0 "> اشتراك
-                        <!-- <i class="bi bi-send-plus  "></i> -->
-                    </button>
+                <div class=" ps-lg-0 col-lg-4 w-fit row justify-content-center ">
+                    <div class="footer-section location">
+                        <h3 class="footer-titles"><img
+                                src="https://register.nationalegypt.com/public/assets/assets/img/Rectangle 13.png"
+                                alt="">
+                            معلومات مفيدة </h3>
+                        <div class="d-lg-flex justify-content-lg-start">
+                            <div class="d-flex flex-column">
+                                <a class="btn btn-link footerLinks ftr" href="visit-saudi.html">
+                                    أسئلة متكررة
+                                </a>
+                                <a class="btn btn-link footerLinks ftr" href="">
+                                    اتصل بنا
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="btn btn-link footerLinks ftr" href="">
+
+                                    من نحن
+                                </a>
+                                <a class="btn btn-link footerLinks ftr" href="./supplierLogIn.html">
+
+                                    التسجيل كمزود خدمة
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line  container-xxl my-4 location2">
+                </div>
+                <div class="footer-section ps-lg-0 col-lg-4 location ">
+                    <h3 class="footer-titles text-center mb-4">اشترك في نشرتنا الاخبارية
+                    </h3>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input name="email" class="ps-1 bg-transparent subscribe-input   w-100 py-3   " type="email"
+                            placeholder="البريد الالكتروني">
+                        <button type="buttn" class="btn subscribe-btn  position-absolute top-0 end-0 "> اشتراك
+                            <!-- <i class="bi bi-send-plus  "></i> -->
+                        </button>
+                    </div>
                 </div>
             </div>
+
+
         </div>
 
+        </div>
+        <div class="line  container-xxl mb-3">
+        </div>
+        <div class="footer-bottom   container-xxl text-center">
+            <p><span class="text-decoration-underline">Copyright © 2024 National Egypt Tours.</span> All Right Reserved.
+                Powered By <a href="https://www.mv-is.com/en" target="_blank">Master Vision Integerated Solutions</a>
+                &amp; <a href="https://www.wedo-eg.com/en" target="_blank">We Do</a></p>
 
-    </div>
-
-    </div>
-    <div class="line  container-xxl mb-3">
-    </div>
-    <div class="footer-bottom   container-xxl text-center">
-        <p><span class="text-decoration-underline">Copyright © 2024 National Egypt Tours.</span> All Right Reserved.
-            Powered By <a href="https://www.mv-is.com/en" target="_blank">Master Vision Integerated Solutions</a>
-            &amp; <a href="https://www.wedo-eg.com/en" target="_blank">We Do</a></p>
-
-    </div>
-</footer>
-<!--//-------------- Footer End -->
+        </div>
+    </footer>
+    <!--//-------------- Footer End -->
 
 
     <!-- JavaScript Libraries -->

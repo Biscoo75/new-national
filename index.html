@@ -54,26 +54,28 @@
         <nav
             class="navbar navbar-expand-lg navbar- px- mt-0 container-fluid mx-auto py-lg-1  d-flex align-items-center justify-content-around">
             <div class="container-xxl row py-2">
-                <div class="d-flex flex-row align-items-center col-4 col-lg-3">
+                <div class="d-flex flex-row align-items-center  col-4 col-lg-3">
                     <a href="index.html"><img class="ms-0 logo-respo" src="assets/img/favIcon.png" alt=""
                             style="margin-left: 10px;" class="logo1">
                     </a>
                     <!-- <h5 class="my-0 text-white text-end"> 
-                     ناشيونال ايجيبت للسياحة
+                    ناشيونال ايجيبت للسياحة
                         </h5> -->
                 </div>
-                <div class="col-3 smallHotLineCT">
-                    <img class="smallHotLine" src="./assets/img/Vector.png" alt="">
+                <div class="row col-8 small-ho-ct justify-content-end">
+                    <div class="col-5 smallHotLineCT">
+                        <img class="smallHotLine" src="./assets/img/Vector.png" alt="">
+                    </div>
+                    <button class="navbar-toggler col-4" onclick="openNav(); hideSideBarButton();" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
-                <button class="navbar-toggler col-4" onclick="openNav(); hideSideBarButton();" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
-                        </path>
-                    </svg>
-                </button>
                 <div class="collapse  navbar-collapse justify-content-end  col-lg-9" id="navbarCollapse">
                     <ul class="list-unstyled w-100 row  mb-lg-0 align-items-center justify-content-between smallNav">
                         <li class="col-lg-6 px-0  mx-auto " id="searchGroup">
@@ -191,13 +193,13 @@
                                                 <p class="mb-0 basket">السلة</p>
                                             </a>
                                         </li>
-                                        <!-- <li id="wishListt" class="dropdown-item  justify-content-start ">
+                                            <li id="wishListt" class="dropdown-item  justify-content-start ">
                                                  <a href="./wishList.html"
                                                 class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
                                                 <i class="bi bi-heart  px-0 mx-0 py-0"></i>
                                                 <p class="mb-0 fav">قائمة المفضلات</p>
                                             </a>
-                                        </li> -->
+                                        </li>
                                         <li id="profile"
                                             class="dropdown-item  justify-content-start  align-items-center">
                                             <a href="./profile.html"
@@ -271,39 +273,50 @@
                     <source src="video/hero1.mp4" type="video/mp4">
                     <source src="video/hero1.ogv" type="video/ogg">
                 </video>
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video video-small">
+                    <source src="assets/img/hero2.mp4" type="video/mp4">
+                    <source src="assets/img/hero2.mp4" type="video/ogg">
+                </video>
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video video-small">
+                    <source src="video/hero2.mp4" type="video/mp4">
+                    <source src="video/hero2.ogv" type="video/ogg">
+                </video>
                 <!-- /*===============================Video End*/ -->
                 <!--* ========================================================================================================== -->
                 <!-- /*===============================Sticky navigator End*/ -->
-                <div class="container-fluid w-100 mx-auto position-absolute bottom-0">
+                <div class="container-fluid w-100 mx-auto position-absolute bottom-0 px-4">
                     <ul class="nav nav-pills mb-0 container-xxl mx-auto w-100 row position-relative align-items-center mx-0 justify-content-between g-0"
                         id="pills-tab" role="tablist" dir="rtl" style=" bottom: 0;padding-right: 0px;">
-                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
-                            <button class="nav-link active p-3" id="pills-home-tab_1" data-bs-toggle="pill"
+                        <li class="nav-item col-lg-3 col-2 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link active p-lg-3 p-2" id="pills-home-tab_1" data-bs-toggle="pill"
                                 type="button" role="tab" aria-controls="pills-home_1" aria-selected="true">
                                 <img src="assets/img/تجارب السعوديه.svg" class="mainCategory" style="" width="45"
                                     height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
                                 التجارب السياحية
                             </button>
                         </li>
-                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
-                            <button class="nav-link p-3" id="pills-home-tab_2" data-bs-toggle="pill" type="button"
-                                role="tab" aria-controls="pills-home_2" aria-selected="false" tabindex="-1">
+                        <li class="nav-item col-lg-3 col-2 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link p-lg-3 p-2" id="pills-home-tab_2" data-bs-toggle="pill"
+                                type="button" role="tab" aria-controls="pills-home_2" aria-selected="false"
+                                tabindex="-1">
                                 <img src="assets/img/المواسم والفعاليات.svg" class="mainCategory" style="" width="45"
                                     height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
                                 المواسم والفعاليات
                             </button>
                         </li>
-                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
-                            <button class="nav-link  p-3" id="pills-home-tab_3" data-bs-toggle="pill" type="button"
-                                role="tab" aria-controls="pills-home_3" aria-selected="false" tabindex="-1">
+                        <li class="nav-item col-lg-3 col-2 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link  p-lg-3 p-2" id="pills-home-tab_3" data-bs-toggle="pill"
+                                type="button" role="tab" aria-controls="pills-home_3" aria-selected="false"
+                                tabindex="-1">
                                 <img src="assets/img/اكتشف السعوديه.svg" class="mainCategory" style="" width="45"
                                     height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
                                 اكتشف السعودية
                             </button>
                         </li>
-                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
-                            <button class="nav-link  p-3" id="pills-home-tab_4" data-bs-toggle="pill" type="button"
-                                role="tab" aria-controls="pills-home_4" aria-selected="false" tabindex="-1">
+                        <li class="nav-item col-lg-3 col-2 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link  p-lg-3 p-2" id="pills-home-tab_4" data-bs-toggle="pill"
+                                type="button" role="tab" aria-controls="pills-home_4" aria-selected="false"
+                                tabindex="-1">
                                 <img src="assets/img/حج وعمره.svg" class="mainCategory" style="" width="45" height="45"
                                     fill="mainCategory" viewbox="0 0 16 16" alt="">
                                 الحج والعمرة
@@ -328,7 +341,7 @@
                     <div class="RL-Line"
                         style="width: 300px; height: 1.4px; background-color: #DEAD69;margin-top: 10px;">
                     </div>
-                    <h2 class="mx-3 my-0"> تجارب <span>سياحية</span> لا تفوتها </h2>
+                    <h2 class="mx-3 my-0 "> تجارب <span>سياحية</span> لا تفوتها </h2>
                     <div class="RL-Line"
                         style="width: 300px; height: 1.4px; background-color: #DEAD69;margin-top: 10px;">
                     </div>
@@ -376,7 +389,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -430,7 +443,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -484,7 +497,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -538,7 +551,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -610,7 +623,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -664,7 +677,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -718,7 +731,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -772,7 +785,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -844,7 +857,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -898,7 +911,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -952,7 +965,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1006,7 +1019,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1070,7 +1083,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1124,7 +1137,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1178,7 +1191,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1232,7 +1245,7 @@
                                             </h2>  -->
                                         <h2 class="prices" style="">٢٢٠٠٠ج.م</h2>
                                     </div>
-                                      
+
 
                                 </div>
                                 <!-- end rating -->
@@ -1667,8 +1680,8 @@
                     <h3 class="footer-titles text-center mb-4">اشترك في نشرتنا الاخبارية
                     </h3>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input name="email" class=" bg-transparent subscribe-input   w-100 py-3   "
-                            type="email" placeholder="البريد الالكتروني">
+                        <input name="email" class=" bg-transparent subscribe-input   w-100 py-3   " type="email"
+                            placeholder="البريد الالكتروني">
                         <button type="buttn" class="btn subscribe-btn  position-absolute top-0 end-0 "> اشتراك
                             <!-- <i class="bi bi-send-plus  "></i> -->
                         </button>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link href="assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/cart.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>Payment Form</title>
+</head>
+
+<body>
+
+
+
+    <!--!--------------- Navbar Start -->
+    <div class="container-fluid position-relative p-0 nav-ct">
+        <nav
+            class="navbar navbar-expand-lg navbar- px- mt-0 container-fluid mx-auto py-lg-1  d-flex align-items-center justify-content-around">
+            <div class="container-xxl row py-2">
+                <div class="d-flex flex-row align-items-center col-4 col-lg-3">
+                    <a href="index.html"><img class="ms-0 logo-respo" src="assets/img/favIcon.png" alt=""
+                            style="margin-left: 10px;" class="logo1">
+                    </a>
+                    <!-- <h5 class="my-0 text-white text-start"> 
+                     ناشيونال ايجيبت للسياحة
+                        </h5> -->
+                </div>
+                <div class="row col-8 small-ho-ct justify-content-end">
+                    <div class="col-5 smallHotLineCT">
+                        <img class="smallHotLine" src="./assets/img/Vector.png" alt="">
+                    </div>
+                    <button class="navbar-toggler col-4" onclick="openNav(); hideSideBarButton();" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="collapse  navbar-collapse justify-content-end  col-lg-9" id="navbarCollapse">
+                    <ul class="list-unstyled w-100 row  mb-lg-0 align-items-center justify-content-between smallNav">
+                        <li class="col-lg-6 px-0  mx-auto " id="searchGroup">
+                            <div
+                                class="row  col-12  align-content-center align-items-center mainSearch mx-0 py-0 justify-content-between ">
+                                <input type="text" name="where" class="col-5 where ms-4" placeholder="حدد وجهتك">
+                                <i class="bi bi-geo-alt position-absolute locationSearchIcon mt-1"></i>
+                                <div class="col-4 whenButtonCT d-flex ">
+                                    <img class="dateImg" src="./assets/img/date.svg" alt="">
+
+                                    <input type="text" name="date" class=" whenButton pe-2" id="datepicker"
+                                        placeholder="حدد تاريخ السفر" oninput="handleDateInput()">
+                                </div>
+                                <script>
+                                    flatpickr("#datepicker", {
+                                        // Options for Flatpickr
+                                    });
+                                </script>
+                                <a href="search.html" class="col-2 ms-0  searchButton my-0">
+                                    <i class="bi bi-search mt-1b searchIconInNav "></i></a>
+
+                            </div>
+
+                        </li>
+
+                        <li
+                            class="col-lg-6 align-content-center my-sm-2 justify-content-end justify-content-lg-center  row">
+                            <div class="col-lg-7 d-flex align-items-center justify-content-end">
+                                <a href="tel:17115">
+                                    <img src="./assets/img/hotline.svg" alt="">
+
+                                </a>
+                            </div>
+                            <ul class="col-lg-4 list-unstyled d-flex my-sm-2 position-static align-items-center justify-content-end gap-1 "
+                                id="top_tools2 ">
+
+
+                                <!-- **=================================SideBar start */ -->
+                                <li>
+                                    <div id="sidebar">
+                                        <div id="iconContainer" class="d-flex justify-content-center">
+
+                                        </div>
+                                        <div id="searchInPhone">
+
+                                        </div>
+                                        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                                        <div
+                                            class="row d-flex flex-column w-100 justify-content-around px-lg-0 align-items-center align-content-center">
+                                            <a class="m-1 d-flex ps-5" href="visit-saudi.html"
+                                                style=" text-align: center; align-items: center;"><img
+                                                    src="assets/img/image 5.svg" height="40" alt="">
+                                                <h7 class="text-light">اكتشف السعودية</h7>
+                                            </a>
+                                            <a class="m-1 d-flex ps-5" href="events.html"
+                                                style=" text-align: center; align-items: center;"><img
+                                                    src="assets/img/events.svg" height="40" alt="">
+                                                <h7 class="text-light"> المواسم والفعاليات</h7>
+                                            </a>
+                                            <a class="m-1 d-flex ps-5" href="./experiences.html"
+                                                style=" text-align: center; align-items: center;">
+                                                <img src="assets/img/exp.svg" height="40" alt="">
+                                                <h7 class="text-light"> التجارب السياحية </h7>
+                                            </a>
+                                            <a class="m-1 d-flex ps-5" href="./omra.html"
+                                                style=" text-align: center; align-items: center;">
+                                                <img src="assets/img/omrah.svg" height="40" alt="">
+                                                <h7 class="text-light"> الحج والعمرة </h7>
+                                            </a>
+                                            <a href="aboutUs.html" class="m-1 d-flex ps-5"
+                                                style=" text-align: center; align-items: center;">
+                                                <img src="assets/img/about.svg" height="40" alt="">
+                                                <h7 class="text-light"> من نحن</h7>
+                                            </a>
+                                            <a href="chairMan.html" class="m-1 d-flex ps-5"
+                                                style=" text-align: center; align-items: center;">
+                                                <img src="assets/img/chair.svg" height="40" alt="">
+                                                <h7 class="text-light"> كلمة رئيس مجلس الادارة </h7>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+
+                                </li>
+
+                                <!-- **=================================SideBar start */ -->
+
+                                <div class=" " id="transs">
+                                    <a class="btn py-1 px-lg-0 ms-lg-0 d-flex align-items-center gap-1" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class=" justify-content-center">EN</div>
+                                        <i class="bi bi-globe2 mt-1"></i>
+                                    </a>
+                                </div>
+                                <div class="dropdown profCT">
+                                    <a class="btn  dropdown-toggle profileDropDown py-1 px-1" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="profileBtn justify-content-center">
+                                            <i class="bi bi-person-circle mt-1 "></i>
+                                        </div>
+                                    </a>
+
+                                    <ul class="dropdown-menu  prof-dd">
+                                        <!-- <li class="dropdown-item   justify-content-start" id="">
+                                            <a href="check-out.html" data-bs-toggle="dropdown"
+                                                class="cart_bt search-overlay-menu-btn  d-flex justify-content-start gap-lg-3">
+                                            </a>
+                                        </li> -->
+                                        <li id="cartt" class="dropdown-item  justify-content-start ">
+                                            <a href="./cart.html" target="_blank"
+                                                class="search-overlay-menu-btn text-black-lg-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-cart4"></i>
+                                                <p class="mb-0 basket">السلة</p>
+                                            </a>
+                                        </li>
+                                        <li id="wishListt" class="dropdown-item  justify-content-start ">
+                                            <a href="./wishList.html"
+                                                class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-heart  px-0 mx-0 py-0"></i>
+                                                <p class="mb-0 fav">قائمة المفضلات</p>
+                                            </a>
+                                        </li>
+                                        <li id="profile"
+                                            class="dropdown-item  justify-content-start  align-items-center">
+                                            <a href="./profile.html"
+                                                class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-person-circle mt-1 "></i>
+                                                <p class="mb-0 mt-1 personal">الصفحه الشخصيه</p>
+                                            </a>
+                                        </li>
+                                        <li id="logOut"
+                                            class="dropdown-item  justify-content-start  align-items-center">
+                                            <a href="./register.html"
+                                                class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-box-arrow-right mt-1 "></i>
+                                                <p class="mb-0 mt-1 personal"> تسجيل الخروج </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <li id="sideBarButton" class="px-lg-0">
+                                    <button class="btn sidebtn px-0" onclick="openNav()"
+                                        style="                                    color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <!--!--------------- Navbar End -->
+
+    <div class="body">
+        <div class="row container-xxl mx-auto my-5" style="height: fit-content;">
+            <div class="col-md-8 cart">
+                <div class="title">
+                    <div class="row">
+                        <div class="col">
+                            <h4><b> السله</b></h4>
+                        </div>
+                        <div class="col align-self-center text-right text-muted">3 عناصر</div>
+                    </div>
+                </div>
+
+                <div class="row  border-bottom">
+                    <div class="row main align-items-center">
+                        <div class="col-lg-2 px-0"><img class="img-fluid" src="./assets/img/5.jpeg"></div>
+                        <div class="col">
+                            <div class="row text-muted">العـُلا</div>
+                        </div>
+                        <div class="col">
+                            <a href="#"> الافراد 1 </a>
+                        </div>
+                        <div
+                            class="col-lg-4 my-lg-0 my-3 d-flex  gap-2 align-items-center align-items-end ">
+                            <div class="">
+                                <button class="btn  add"><i class="bi bi-cart4"></i></button>
+                            </div>
+                            <button class="button  gap-2">
+                                <div class="trash">
+                                    <div class="top">
+                                        <div class="paper"></div>
+                                    </div>
+                                    <div class="box"></div>
+                                    <div class="check">
+                                        <svg viewBox="0 0 8 6">
+                                            <polyline points="1 3.4 2.71428571 5 7 1"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </button>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="row border-top border-bottom">
+                    <div class="row main align-items-center">
+                        <div class="col-lg-2 px-0"><img class="img-fluid" src="./assets/img/5.jpeg"></div>
+                        <div class="col">
+                            <div class="row text-muted">العـُلا</div>
+                        </div>
+                        <div class="col">
+                            <a href="#"> الافراد 1 </a>
+                        </div>
+                        <div
+                            class="col-lg-4 my-lg-0 my-3 d-flex  gap-2 align-items-center align-items-end">
+                            <div class="">
+                                <button class="btn  add"><i class="bi bi-cart4"></i></button>
+                            </div>
+                            <button class="button  gap-2">
+                                <div class="trash">
+                                    <div class="top">
+                                        <div class="paper"></div>
+                                    </div>
+                                    <div class="box"></div>
+                                    <div class="check">
+                                        <svg viewBox="0 0 8 6">
+                                            <polyline points="1 3.4 2.71428571 5 7 1"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </button>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="row border-top border-bottom">
+                    <div class="row main align-items-center">
+                        <div class="col-lg-2 px-0"><img class="img-fluid" src="./assets/img/5.jpeg"></div>
+                        <div class="col">
+                            <div class="row text-muted">العـُلا</div>
+                        </div>
+                        <div class="col">
+                            <a href="#"> الافراد 1 </a>
+                        </div>
+                        <div
+                            class="col-lg-4 my-lg-0 my-3 d-flex  gap-2 align-items-center align-items-end ">
+                            <div class="">
+                                <button class="btn  add"><i class="bi bi-cart4"></i></button>
+                            </div>
+                            <button class="button  gap-2">
+                                <div class="trash">
+                                    <div class="top">
+                                        <div class="paper"></div>
+                                    </div>
+                                    <div class="box"></div>
+                                    <div class="check">
+                                        <svg viewBox="0 0 8 6">
+                                            <polyline points="1 3.4 2.71428571 5 7 1"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </button>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="back-to-shop"><a href="index.html" class="text-black-50"><i
+                            class="bi bi-arrow-right text-black"></i> العودة إلى المتجر</a></div>
+            </div>
+            <div class="col-md-4 summary">
+                <div>
+                    <h5><b>التفاصيل</b></h5>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col" style="padding-left:0;">عنصر(3)</div>
+                    <div class="col text-right">&euro; 132.00</div>
+                </div>
+
+                <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                    <div class="col">اجمالي السعر</div>
+                    <div class="col text-right">&euro; 137.00</div>
+                </div>
+                <a class="btn bg-white text-black gotoPay" href="./check-out.html">اذهب للسلة</a>
+            </div>
+        </div>
+
+    </div>
+    <!--//-------------- Footer Start -->
+    <footer class="footer  py-3">
+
+        <div class="footerCt ">
+            <div
+                class="d-flex gap-lg-0 gap-3 flex-lg-row flex-column w-100 container-xxl mx-auto px-0    align-items-center justify-content-between">
+                <img src="./assets/img/favIcon.png" alt="">
+                <div class="social-media sm-center gap-2 d-flex align-items-center">
+
+                    <a href="https://www.instagram.com/national_egypt" target="_blank"><img src="./assets/img/insta.png"
+                            alt=""></a>
+                    <a href="https://www.youtube.com/@user-gy3gu2mb9l" target="_blank"><img
+                            src="./assets/img/youtube.png" alt=""></a>
+                    <a href="https://www.facebook.com/NationalEgyptTours?locale=ar_AR" target="_blank"><img
+                            src="./assets/img/face.png" width="30" alt=""></a>
+                    <a href="https://www.instagram.com/national_egypt" target="_blank"><img src="./assets/img/x.png"
+                            alt=""></a>
+                    <a href="tel:17115" class="ms-2">
+                        <img src="./assets/img/hot.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="line  container-xxl mt-3">
+            </div>
+            <div class="container-xxl px-0 mx-auto row justify-content-between my-5">
+                <div class="footer-section ps-lg-0 col-lg-4 location ">
+                    <h3 class="footer-titles"><img
+                            src="https://register.nationalegypt.com/public/assets/assets/img/Rectangle 13.png" alt="">
+                        الروابط الاكثر تصفحاً
+                    </h3>
+                    <div class="d-lg-flex justify-content-lg-start">
+                        <div class="d-flex flex-column">
+                            <a class="btn btn-link footerLinks ftr ftr" href="visit-saudi.html">
+                                اكتشف السعودية
+                            </a>
+                            <a class="btn btn-link footerLinks ftr" href="./events.html"> فعاليات و مواسم
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a class="btn btn-link footerLinks ftr" href="">
+                                نشاطات يمكنك القيام بها
+                            </a>
+                            <a class="btn btn-link footerLinks ftr" href="./supplierLogIn.html">
+                                التسجيل كمزود خدمة
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" ps-lg-0 col-lg-4 w-fit row justify-content-center ">
+                    <div class="footer-section location">
+                        <h3 class="footer-titles"><img
+                                src="https://register.nationalegypt.com/public/assets/assets/img/Rectangle 13.png"
+                                alt="">
+                            معلومات مفيدة </h3>
+                        <div class="d-lg-flex justify-content-lg-start">
+                            <div class="d-flex flex-column">
+                                <a class="btn btn-link footerLinks ftr" href="visit-saudi.html">
+                                    أسئلة متكررة
+                                </a>
+                                <a class="btn btn-link footerLinks ftr" href="">
+                                    اتصل بنا
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a class="btn btn-link footerLinks ftr" href="">
+
+                                    من نحن
+                                </a>
+                                <a class="btn btn-link footerLinks ftr" href="./supplierLogIn.html">
+
+                                    التسجيل كمزود خدمة
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line  container-xxl my-4 location2">
+                </div>
+                <div class="footer-section ps-lg-0 col-lg-4 location ">
+                    <h3 class="footer-titles text-center mb-4">اشترك في نشرتنا الاخبارية
+                    </h3>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input name="email" class="ps-1 bg-transparent subscribe-input   w-100 py-3   " type="email"
+                            placeholder="البريد الالكتروني">
+                        <button type="buttn" class="btn subscribe-btn  position-absolute top-0 end-0 "> اشتراك
+                            <!-- <i class="bi bi-send-plus  "></i> -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
+        <div class="line  container-xxl mb-3">
+        </div>
+        <div class="footer-bottom   container-xxl text-center">
+            <p><span class="text-decoration-underline">Copyright © 2024 National Egypt Tours.</span> All Right Reserved.
+                Powered By <a href="https://www.mv-is.com/en" target="_blank">Master Vision Integerated Solutions</a>
+                &amp; <a href="https://www.wedo-eg.com/en" target="_blank">We Do</a></p>
+
+        </div>
+    </footer>
+    <!--//-------------- Footer End -->
+    <script>
+        function moveLiToSidebar() {
+            var searchGroupLi = document.getElementById('searchGroup');
+            var transsLi = document.getElementById('transs');
+            var carttLi = document.getElementById('cartt');
+            var wishListtLi = document.getElementById('wishListt');
+            var profileLi = document.getElementById('profile');
+            var logOutLi = document.getElementById('logOut'); // New variable for logOut
+            var iconContainer = document.getElementById('iconContainer');
+            var searchInPhone = document.getElementById('searchInPhone');
+            var mainContent = document.getElementById('main-content');
+
+            if (window.innerWidth <= 991) {
+                // Move searchGroupLi to searchInPhone
+                if (searchGroupLi && !searchInPhone.contains(searchGroupLi)) {
+                    searchInPhone.appendChild(searchGroupLi);
+                }
+                // Move profileLi and logOutLi to iconContainer
+                if (profileLi && !iconContainer.contains(profileLi)) {
+                    iconContainer.appendChild(profileLi);
+                }
+                if (logOutLi && !iconContainer.contains(logOutLi)) {
+                    iconContainer.appendChild(logOutLi);
+                }
+                // Move transsLi, carttLi, wishListtLi to iconContainer
+                if (transsLi && !iconContainer.contains(transsLi)) {
+                    iconContainer.appendChild(transsLi);
+                }
+                if (carttLi && !iconContainer.contains(carttLi)) {
+                    iconContainer.appendChild(carttLi);
+                }
+                if (wishListtLi && !iconContainer.contains(wishListtLi)) {
+                    iconContainer.appendChild(wishListtLi);
+                }
+            } else {
+                // Move all items back to mainContent
+                if (searchGroupLi && !mainContent.contains(searchGroupLi)) {
+                    mainContent.appendChild(searchGroupLi);
+                }
+                if (profileLi && !mainContent.contains(profileLi)) {
+                    mainContent.appendChild(profileLi);
+                }
+                if (logOutLi && !mainContent.contains(logOutLi)) {
+                    mainContent.appendChild(logOutLi);
+                }
+                if (transsLi && !mainContent.contains(transsLi)) {
+                    mainContent.appendChild(transsLi);
+                }
+                if (carttLi && !mainContent.contains(carttLi)) {
+                    mainContent.appendChild(carttLi);
+                }
+                if (wishListtLi && !mainContent.contains(wishListtLi)) {
+                    mainContent.appendChild(wishListtLi);
+                }
+            }
+        }
+
+        // Call the function on page load and when the window is resized
+        window.addEventListener('load', moveLiToSidebar);
+        window.addEventListener('resize', moveLiToSidebar);
+
+    </script>
+    <script>
+        document.querySelectorAll('.button').forEach(button => button.addEventListener('click', e => {
+            if (!button.classList.contains('delete')) {
+                button.classList.add('delete');
+                setTimeout(() => button.classList.remove('delete'), 3200);
+            }
+            e.preventDefault();
+        }));
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

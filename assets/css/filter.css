@@ -15,13 +15,15 @@
     display: block;
 
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
     .filter.close {
         width: 90%;
         display: block;
-    
+
     }
 }
+
 .filter .logo-details {
     height: 60px;
     width: 100%;
@@ -280,11 +282,12 @@
     font-size: 26px;
     font-weight: 600;
 }
-.cities h2
-{
+
+.cities h2 {
     font-size: 32px;
     font-weight: bolder;
 }
+
 @media (max-width: 420px) {
     .filter.close .nav-links li .sub-menu {
         display: none;
@@ -305,46 +308,59 @@
     .collapseBtn {
         display: none !important;
     }
-    
+
     .filterTitle {
+        font-size: 20px !important;
         display: block;
     }
 }
-.time
-{
+
+.time {
     border: 0.5px solid #ddd;
     border-radius: 10px;
     padding: 10px;
 }
-input[type="checkbox"]:checked + label::before {
+
+input[type="checkbox"]:checked+label::before {
     background-color: #ca9f44;
     border-color: #ca9f44;
 }
-     /* Style for the checkbox */
-     input[type="checkbox"] {
-        display: none; /* Hide the default checkbox */
-    }
 
-    /* Style for the custom checkbox */
-    input[type="checkbox"] + label::before {
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-color: #fff; /* Default color */
-        border: 0.5px solid #000; /* Default border color */
-        border-radius: 3px;
-        margin-left: 10px;
-        vertical-align: middle;
-    }
+/* Style for the checkbox */
+input[type="checkbox"] {
+    display: none;
+    /* Hide the default checkbox */
+}
 
-    /* Style for checked state */
-    input[type="checkbox"]:checked + label::before {
-        content: '\2713'; /* Unicode for checkmark */
-        text-align: center;
-        color: #fff;
-        line-height: 20px; /* Center the checkmark vertically */
-        font-size: 14px; /* Adjust the size of the checkmark */
-    }
+/* Style for the custom checkbox */
+input[type="checkbox"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    /* Default color */
+    border: 0.5px solid #000;
+    /* Default border color */
+    border-radius: 3px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
 
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+    font-weight: bold !important;
+}
 
+/* Style for checked state */
+input[type="checkbox"]:checked+label::before {
+    content: '\2713';
+    /* Unicode for checkmark */
+    text-align: center;
+    color: #fff;
+    /* line-height: 20px; */
+    /* Center the checkmark vertically */
+    font-size: 12px;
+    /* Adjust the size of the checkmark */
+}
