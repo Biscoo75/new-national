@@ -25,7 +25,7 @@
 }
 
 body {
-    direction: rtl !important;
+    /* direction: rtl !important; */
     font-family: 'main' !important;
     background: #dddddd2f;
 }
@@ -661,7 +661,7 @@ s ul#top_tools2 li i {
     position: fixed;
     z-index: 10000000000 !important;
     top: 0;
-    left: 0;
+    /* left: 0; */
     background: linear-gradient(90deg, rgba(35, 40, 44, 0.8) 9.5%, rgba(38, 44, 48, 0.64) 100%);
     overflow-x: hidden;
     transition: .8s;
@@ -934,6 +934,8 @@ s ul#top_tools2 li i {
 
 .profile-tab label {
     font-weight: 600;
+    text-align: start;
+
 }
 
 .profile-tab p {
@@ -1296,11 +1298,13 @@ form .row {
 /*//-------------------------- Footer  Start------------------------------------------ */
 
 .footerLinks {
-    text-align: right;
+    text-align: start;
+
     font-family: 'light';
     font-size: 15px;
     font-weight: 400;
-    text-align: right;
+    text-align: start;
+
     color: #D9B688;
     text-decoration: none;
 }
@@ -1320,7 +1324,8 @@ form .row {
     font-family: 'main';
     font-size: 24px;
     font-weight: 800;
-    text-align: right;
+    text-align: start;
+
 
 }
 

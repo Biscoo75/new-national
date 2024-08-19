@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'main';
-    src: url('../fonts/Al-Jazeera-Arabic-Regular\ \(1\).ttf');
-}
+
 body {
     font-family: 'main' !important;
 	color: #6a6f8c;
@@ -123,7 +120,7 @@ a {
 .login-form .group .button {
 	border: none;
 	padding: 15px 20px;
-	border-radius: 25px;
+	border-radius: 11px;
 	background: rgba(255, 255, 255, .1);
 }
 

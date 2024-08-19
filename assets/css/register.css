@@ -1,6 +1,20 @@
 @font-face {
     font-family: 'main';
-    src: url('../fonts/Al-Jazeera-Arabic-Regular\ \(1\).ttf');
+    src: url('../fonts/Almarai-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/Almarai-Light.ttf');
+}
+:root {
+    --primary: #F2CCA2;
+    --primary-text: #FFFBF6;
+    --secondary-text: #D19E52;
+    --primary-headers: #23282cc7;
+    --secondary: #34ad54;
+    --light: #eef9ff;
+    --dark: #091e3e;
 }
 body {
     font-family: 'main' !important;
@@ -39,15 +53,16 @@ a {
 }
 
 .tittle {
-	color: #ca9f44;
+	color: #F2CCA2;
 }
 
 .login-wrap {
 	width: 100%;
 	margin: auto;
 	max-width: 525px;
-	min-height: 670px;
+	min-height: 590px;
 	position: relative;
+	border-radius: 10px;
 	/* background: url('../img/111.jpg') no-repeat center; */
 	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
 }
@@ -55,9 +70,12 @@ a {
 .login-html {
 	width: 100%;
 	height: 100%;
+	border-radius: 10px;
 	position: absolute;
 	padding: 90px 70px 50px 70px;
 	background: #0000008a;
+	box-shadow: 0px 0px 80px 0px #eec97940;
+
 }
 
 .login-html .sign-in-htm,
@@ -81,7 +99,7 @@ a {
 .login-html .tab,
 .login-form .group .label,
 .login-form .group .button {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .login-html .tab {
@@ -91,13 +109,13 @@ a {
 	margin: 0 15px 10px 0;
 	display: inline-block;
 	border-bottom: 2px solid transparent;
-	color: #ca9f44;
+	color: #F2CCA2;
 }
 
 .login-html .sign-in:checked+.tab,
 .login-html .sign-up:checked+.tab {
 	color: #fff;
-	border-color: #ca9f44;
+	border-color: #F2CCA2;
 }
 
 .login-form {
@@ -105,6 +123,7 @@ a {
 	position: relative;
 	perspective: 1000px;
 	transform-style: preserve-3d;
+	margin-top: 20px;
 }
 
 .login-form .group {
@@ -122,8 +141,8 @@ a {
 .login-form .group .input,
 .login-form .group .button {
 	border: none;
-	padding: 15px 20px;
-	border-radius: 25px;
+	padding: 8px 20px;
+	border-radius: 11px;
 	background: rgba(255, 255, 255, .1);
 }
 
@@ -138,7 +157,7 @@ a {
 }
 
 .login-form .group .button {
-	background: #ca9f44;
+	background: var(--secondary-text);
 }
 
 .login-form .group label .icon {

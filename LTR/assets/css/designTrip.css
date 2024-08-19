@@ -445,7 +445,7 @@ s ul#top_tools2 li i {
   position: fixed;
   z-index: 10000000000 !important;
   top: 0;
-  left: 0;
+  /* left: 0; */
   background-color: #111;
   overflow-x: hidden;
   transition: .8s;

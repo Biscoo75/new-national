@@ -108,7 +108,7 @@
         smartSpeed: 1000,
         responsive: {
             0: {
-                items: 2
+                items: 3
             },
             576: {
                 items: 4
@@ -125,45 +125,70 @@
 })(jQuery);
 
 // cards start //
-var home = document.getElementById('pills-home');
-var profile = document.getElementById('pills-profile');
-var contact = document.getElementById('pills-contact');
-var islam = document.getElementById('pills-islam');
-var firstButton = document.getElementById('pills-home-tab');
-var secondButton = document.getElementById('pills-profile-tab');
-var thirdButton = document.getElementById('pills-contact-tab');
-var fourthButton = document.getElementById('pills-islam-tab');
+// var home = document.getElementById('pills-home');
+// var profile = document.getElementById('pills-profile');
+// var contact = document.getElementById('pills-contact');
+// var islam = document.getElementById('pills-islam');
+// var firstButton = document.getElementById('pills-home-tab');
+// var secondButton = document.getElementById('pills-profile-tab');
+// var thirdButton = document.getElementById('pills-contact-tab');
+// var fourthButton = document.getElementById('pills-islam-tab');
 
 
-secondButton.addEventListener('click', function () {
-    profile.classList.replace('d-none', 'd-block');
-    home.classList.replace('d-block', 'd-none');
-    contact.classList.replace('d-block', 'd-none');
-    islam.classList.replace('d-block', 'd-none');
-    console.log('hi')
+// secondButton.addEventListener('click', function () {
+//     profile.classList.replace('d-none', 'd-block');
+//     home.classList.replace('d-block', 'd-none');
+//     contact.classList.replace('d-block', 'd-none');
+//     islam.classList.replace('d-block', 'd-none');
+//     console.log('hi')
+// });
+
+// firstButton.addEventListener('click', function () {
+//     home.classList.replace('d-none', 'd-block');
+//     profile.classList.replace('d-block', 'd-none');
+//     contact.classList.replace('d-block', 'd-none');
+//     islam.classList.replace('d-block', 'd-none');
+//     console.log('hi')
+
+// });
+
+// thirdButton.addEventListener('click', function () {
+//     contact.classList.replace('d-none', 'd-block');
+//     home.classList.replace('d-block', 'd-none');
+//     profile.classList.replace('d-block', 'd-none');
+//     islam.classList.replace('d-block', 'd-none');
+// });
+// fourthButton.addEventListener('click', function () {
+//     islam.classList.replace('d-none', 'd-block');
+//     home.classList.replace('d-block', 'd-none');
+//     profile.classList.replace('d-block', 'd-none');
+//     contact.classList.replace('d-block', 'd-none');
+// });
+
+document.querySelectorAll('[id^="pills-home-tab_"]').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var tabIndex = this.id.split('_')[1]; // Extract the index from the button's ID
+        var activeTab = document.getElementById('pills-home_' + tabIndex);
+        var tabs = document.querySelectorAll('[id^="pills-home_"]');
+        var buttons = document.querySelectorAll('[id^="pills-home-tab_"]');
+
+        // Remove active class from all buttons and hide all tabs
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+
+        tabs.forEach(function(tab) {
+            tab.classList.add('d-none');
+            tab.classList.remove('d-block');
+        });
+
+        // Add active class to the clicked button and show the corresponding tab
+        this.classList.add('active');
+        activeTab.classList.remove('d-none');
+        activeTab.classList.add('d-block');
+    });
 });
 
-firstButton.addEventListener('click', function () {
-    home.classList.replace('d-none', 'd-block');
-    profile.classList.replace('d-block', 'd-none');
-    contact.classList.replace('d-block', 'd-none');
-    islam.classList.replace('d-block', 'd-none');
-    console.log('hi')
-
-});
-
-thirdButton.addEventListener('click', function () {
-    contact.classList.replace('d-none', 'd-block');
-    home.classList.replace('d-block', 'd-none');
-    profile.classList.replace('d-block', 'd-none');
-    islam.classList.replace('d-block', 'd-none');
-});
-fourthButton.addEventListener('click', function () {
-    islam.classList.replace('d-none', 'd-block');
-    home.classList.replace('d-block', 'd-none');
-    profile.classList.replace('d-block', 'd-none');
-    contact.classList.replace('d-block', 'd-none');
-});
 
 // ^==============our team section
 //============= sidebar start
@@ -186,6 +211,8 @@ function hideSideBarButton() {
     var sideBarButton = document.getElementById('sideBarButton');
     sideBarButton.style.display = 'none';
 }
+
+
 //! inputs placeholders
 function handleDateInput() {
     // Get the input element
@@ -259,7 +286,6 @@ function moveLiToSidebar() {
 // Call the function on page load and when the window is resized
 window.addEventListener('load', moveLiToSidebar);
 window.addEventListener('resize', moveLiToSidebar);
-
 
 //^=========================== the popup
 function showPopup() {
@@ -389,3 +415,51 @@ document.addEventListener('DOMContentLoaded', function () {
         personalTab.classList.remove('active');
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    flatpickr("#datepicker", {
+        // your options here
+    });
+
+    flatpickr("#another-datepicker", {
+        // your options here
+    });
+    
+    flatpickr("#another-datepicker-two", {
+        // your options here
+    });
+    flatpickr("#datepicker-in-cat", {
+        // your options here
+    });
+});
+function handleDateInput(event) {
+    const inputId = event.target.id;
+
+    if (inputId === 'datepicker') {
+        // Handle datepicker input
+    } else if (inputId === 'another-datepicker') {
+        // Handle another datepicker input
+    }
+    else if (inputId === 'another-datepicker-two') {
+        // Handle another datepicker input
+    }
+    else if (inputId === 'datepicker-in-cat') {
+        // Handle another datepicker input
+    }
+}
+       // Initialize Flatpickr
+                            flatpickr("#datepicker-in-cat", {
+                                // Options for Flatpickr
+                                dateFormat: "Y-m-d",
+                                onChange: function(selectedDates, dateStr, instance) {
+                                    handleDateInput(selectedDates, dateStr, instance);
+                                }
+                            });
+                        
+                            // Handle date input changes
+                            function handleDateInput(selectedDates, dateStr, instance) {
+                                console.log("Selected Date:", dateStr);
+                                // Add custom logic to handle the date input
+                            }
