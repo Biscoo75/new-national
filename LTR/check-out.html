@@ -99,7 +99,7 @@
 
                 <!-- **=================================SideBar start */ -->
                 <li>
-                                                     <div id="sidebar" class="end-0">
+                  <div id="sidebar" class="end-0">
 
                     <div id="iconContainer" class="d-flex justify-content-center">
 
@@ -149,7 +149,7 @@
                 <div class=" " id="transs">
                   <a class="btn py-1 px-lg-0 ms-lg-0 d-flex align-items-center gap-1" href="#" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class=" justify-content-center">AR</div>
+                    <div class=" justify-content-center">EN</div>
                     <i class="bi bi-globe2 mt-1"></i>
                   </a>
                 </div>
@@ -175,12 +175,12 @@
                       </a>
                     </li>
                     <li id="wishListt" class="dropdown-item  justify-content-start ">
-                                               <a href="./wishList.html"
-                                              class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
-                                              <i class="bi bi-heart  px-0 mx-0 py-0"></i>
-                                              <p class="mb-0 fav">قائمة المفضلات</p>
-                                          </a>
-                                      </li>
+                      <a href="./wishList.html"
+                        class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                        <i class="bi bi-heart  px-0 mx-0 py-0"></i>
+                        <p class="mb-0 fav">قائمة المفضلات</p>
+                      </a>
+                    </li>
                     <li id="profile" class="dropdown-item  justify-content-start  align-items-center">
                       <a href="./profile.html"
                         class="search-overlay-menu-btn  d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
@@ -254,11 +254,11 @@
             <div class="formbold-input-flex">
               <div>
                 <label for="firstname" class="formbold-form-label"> الاسم الأول </label>
-                <input type="text" name="firstname" placeholder="Andrio" id="firstname" class="formbold-form-input" />
+                <input type="text" name="firstname" placeholder="الاسم الاول" id="firstname" class="formbold-form-input" />
               </div>
               <div>
                 <label for="lastname" class="formbold-form-label"> الأسم الاخير</label>
-                <input type="text" name="lastname" placeholder="Dolee" id="lastname" class="formbold-form-input" />
+                <input type="text" name="lastname" placeholder="الاسم الاخير" id="lastname" class="formbold-form-input" />
               </div>
             </div>
             <label for="" class="formbold-form-label"> رقم الهاتف</label>
@@ -529,7 +529,7 @@
             </div>
             <div class="d-flex align-items-start my-4">
               <input type="checkbox" class="mt-1">
-              <p class="pe-2 py-0">احصل على رسائل بريد إلكتروني تحتوي على عروض خاصة وأفكار ملهمة ونصائح وتحديثات أخرى من
+              <p class="ps-2 py-0">احصل على رسائل بريد إلكتروني تحتوي على عروض خاصة وأفكار ملهمة ونصائح وتحديثات أخرى من
                 <strong>ناشيونال ايجيبت</strong> يمكنك إلغاء
                 الاشتراك في أي وقت.
               </p>
@@ -542,13 +542,13 @@
           <div class="formbold-form-step-2">
             <div>
               <!--^----------------package details inside form start-->
-              <div class="row gap-4  packageDetailsInsideForm">
+              <div class="row gap-4 align-items-center packageDetailsInsideForm">
                 <!--^----------------package photo inside form-->
-                <div class="col-2 rounded-2 ">
+                <div class="col-lg-2 rounded-2 ">
                   <img class="rounded-3 packagePicInsideForm" width="150" src="./101.jpg" alt="">
                 </div>
                 <!--&----------------package description inside form-->
-                <div class="col-8 data mx-lg-3">
+                <div class="col-lg-8 data mx-lg-3 ">
                   <h6>رحلة اكتشاف الحياة البرية</h6>
                   <div class="d-flex">
                     <i class="bi bi-person  px-1"></i>
@@ -559,11 +559,11 @@
                     <p>Thu, Feb 29, 2024 • 2:00 PM
                     </p>
                   </div>
-                  <div class="d-flex">
+                  <!-- <div class="d-flex">
                     <i class="bi bi-x-lg px-1"></i>
                     <a href="#" class="text-dark"><a href="#" class="text-decoration-underline cancelation">Cancellation
                         policy</a> Non-refundable </a>
-                  </div>
+                  </div> -->
                   <!-- <div>Details about the <span class="text-decoration-underline"> experience operator</span></div> -->
                 </div>
               </div>
@@ -720,15 +720,17 @@
     <!--*------------------- form end -->
 
     <div class="col-lg-4  px-lg-2 my-4 px-0 py-4 position-sticky secondCol">
-      <div class="detailsCard p-2 bg-white ">
+      <div class="detailsCard py-3 bg-white px-lg-4">
         <!--^----------------package details start-->
-        <div class="row gap-4 packageDetailsInsideForm">
+        <div class="summaryTotalPrice mb-2" style="padding-left:0;">عنصر(3)</div>
+        <div class="row gap-4 packageDetailsInsideForm  px-lg-auto px-2">
           <!--^----------------package photo start-->
           <div class="col-3 rounded-2">
             <img class="rounded-3 packagePicInsideForm" width="100" src="./101.jpg" alt="">
           </div>
           <!--&----------------package description inside form-->
           <div class="col-8 data">
+
             <h6>رحلة اكتشاف الحياة البرية</h6>
             <div class="d-flex">
               <i class="bi bi-person  px-1"></i>
@@ -739,55 +741,40 @@
               <p>Thu, Feb 29, 2024 • 2:00 PM
               </p>
             </div>
-            <div class="d-flex">
-              <i class="bi bi-x-lg px-1"></i>
-              <p>Non-refundable <a href="#" class="text-decoration-underline cancelation">Cancellation policy</a></p>
-            </div>
-            <!-- <div>Details about the <span class="text-decoration-underline"> experience operator</span></div> -->
           </div>
 
         </div>
         <!--^----------------package details inside form end-->
-        <hr>
-        <form class="my-4">
-          <div class="input-group">
-            <input type="text" class="promo w-75 " placeholder="Promo code">
-            <button type="submit" class="btn Redeem">Redeem</button>
+        <hr class="mt-3">
+        <form class="my-1">
+          <div class="input-group px-1">
+            <input type="text" class="promo w-100 " placeholder="كود الخصم">
+            <button type="submit" class="btn Redeem">تفعيل</button>
           </div>
         </form>
         <hr>
-        <div class="d-flex justify-content-between my-4 container-fluid">
+        <div class="d-flex justify-content-between my-0 container-fluid">
           <h5>السعر الكلي</h5>
           <p class="summaryTotalPrice">480$</p>
         </div>
       </div>
-      <div class="mt-5 px-3">
-        <h5>احجز بثقة</h5>
+      <div class="mt-3 px-3">
         <div class="row">
-          <div class="col-2">
-            <img src="./assets/img/trustpiolt.svg" width="50" alt="">
+          <div class="col-2 ps-0">
+            <img src="./assets/img/medal.png" width="50" alt="">
           </div>
-          <div class="col-10">
-            <h5>درجة Trustpilot ممتازة</h5>
-            <p>مع أكثر من 184,793 تعليقًا من المسافرين، يمكنك الحصول على الصورة الكاملة قبل أن تذهب.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-2">
-            <img src="./assets/img/trustpiolt.svg" width="50" alt="">
-          </div>
-          <div class="col-10">
-            <h5>تجارب لا تنسى</h5>
+          <div class="col-10 ps-0">
+            <h5 class="overView-title mb-1">تجارب لا تنسى</h5>
             <p>
               تصفح واحجز الجولات الرائعة للغاية، وسوف ترغب في إخبار أصدقائك بها. </p>
           </div>
         </div>
         <div class="row">
-          <div class="col-2">
-            <img src="./assets/img/trustpiolt.svg" width="50" alt="">
+          <div class="col-2 ps-0">
+            <img src="./assets/img/support-pay.png" width="50" alt="">
           </div>
-          <div class="col-10">
-            <h5>دعم عالمي على مدار 24 ساعة طوال أيام الأسبوع</h5>
+          <div class="col-10 ps-0">
+            <h5 class="overView-title mb-1">دعم عالمي على مدار 24 ساعة طوال أيام الأسبوع</h5>
             <p>فريق خدمة العملاء الحائز على جوائز لدينا موجود لتقديم المساعدة على مدار الساعة.</p>
           </div>
         </div>
@@ -797,9 +784,9 @@
           </div>
           <div class="col-10">
 
-            <a href="tel:17115" class="text-black-50">
-              <h5>17115 <i class="bi bi-telephone "></i></h5>
-            </a>
+            <!-- <a href="tel:17115" class="text-black-50 text-decoration-none">
+              <h3>17115 <i class="bi bi-telephone "></i></h3>
+            </a> -->
           </div>
         </div>
       </div>
@@ -908,7 +895,7 @@
     </div>
   </footer>
   <!--//-------------- Footer End -->
- 
+
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="assets/js/main.js"></script> -->

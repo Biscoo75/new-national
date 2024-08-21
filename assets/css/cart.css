@@ -19,12 +19,12 @@
 }
 
 * {
-    direction: rtl !important;
+    /* direction: rtl !important; */
     font-family: 'main' !important;
 }
 
 body {
-    direction: rtl !important;
+    /* direction: rtl !important; */
     font-family: 'main' !important;
 
 }
